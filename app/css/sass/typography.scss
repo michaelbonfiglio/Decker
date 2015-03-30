@@ -1,0 +1,29 @@
+/* #Typography
+
+Basic styling of typography.
+
+*/
+
+$thin: 'Griffin-Thin';
+$light: 'Griffin-Light';
+$bold: 'Griffin-Bold';
+$bolder: 'Griffin-Black';
+
+
+
+@font-face {
+	font-family: 'Griffin-Thin';
+	src: url("../fonts/GriffGotThi");
+}
+
+@font-face {
+	font-family: 'Griffin-Light';
+}
+
+@font-face {
+	font-family: 'Griffin-Bold';
+}
+
+@font-face {
+	font-family: 'Griffin-Black';
+}
