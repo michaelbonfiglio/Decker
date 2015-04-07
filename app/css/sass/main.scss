@@ -1,177 +1,23 @@
 
 @import "normalize.scss";
-@import "typography.scss";
+@import "partials/typography.scss";
+@import "partials/variables";
+@import "partials/mixins";
+
+
+/* Extra small devices (phones, less than 768px). Styles in _base.scss */
+@import "breakpoints/base";
+
+/* Small devices (tablets, 768px and up) Styles in _768up.scss */
+@media (min-width: 768px) { @import "breakpoints/768up";}
+
+/* Medium devices (desktops, 992px and up) Styles in _992up.scss */
+@media (min-width: 992px) { @import "breakpoints/992up"; }
+
+/* Large devices (large desktops, 1200px and up) Styles in _1030up.scss */
+@media (min-width: 1200px) { @import "breakpoints/1200up"; } 
 
 
 
-/* #Elements
-
-Basic styling of html tags.
-
-*/
-
-body{
-	font-family: "Griffin";
-}
-
-
-$mica-green: #89c5b9;
-
-
-
-/* ##Headers
-
-Primary Header styles.
-
-	<h1>Heading 1</h1>
-
-	<h2>Heading 2</h2>
-
-	<div class="alpha">Alpha Heading</div>
-
-	<div class="beta">Beta Heading</div>
-
-
-*/
-
-h1{
-	font-size: 48px;
-	font-family: 'Griffin-Thin';
-}
-
-h2{
-	font-size: 36px;
-}
-
-.decker{
-	text-transform: uppercase;
-}
-
-/* ##Navigation
-
-
-
-*/
-
-nav{
-	background-color: #000;
-	height: 30px;
-	margin-bottom: 50px;	
-
-	ul{
-		list-style-type: none;
-		padding: 0;
-
-		&.nav:after {clear: both;}
-
-
-		li{
-			a{
-				text-decoration: none;
-			}
-		
-			&.nav-h1{
-				float: left;
-				padding-top: 10px;
-				margin-right: 50px;
-				a{
-					font-family: $bolder;
-					color: #fff;
-
-				}
-			}
-
-			&.nav-h3{
-				a{
-					font-family: $light;
-					color: #000;
-				}
-
-			}
-		}
-	}
-
-	.nav-h2{
-		font-size: 14px;
-		text-transform: uppercase;
-		color: $mica-green;
-
-	}
-
-	.flyout {
-		position: relative;
-		overflow: hidden;
-	}
-
-	.flyout-content {
-		position: absolute;
-		top: 100%;
-		left: -9999px;
-		background-color: white;
-		border: 1px solid $mica-green;
-
-		.column {
-			float: left;
-			width: 60px;
-		}
-	}
-
-	.flyout:hover {
-		overflow: visible;
-		background-color: white;
-
-		a{
-			color: #000;
-
-				}
-
-		.flyout-content {
-			left: 0;
-		}
-	}
-
-}
-
-
-
-/* # Media Object
-
-Image + Content arrange throughout the site.
-
-
-		<div class="media book-item">
-			<img src="http://i.kinja-img.com/gawker-media/image/upload/s--GjoeBEby--/c_fit,fl_progressive,q_80,w_636/rqbifaxamjf9zjowvgvg.jpg" alt="" clas="src" >
-			<div class="body">
-				<h2 class="book-title"> Book Title</h2>
-				<p class="book-desc">jkhef;ahF;ALDHF;ALHDF;ALS</p>
-			</div>
-		</div>
-
-*/
-
-.item-img {
-	float: left;
-	margin-right: 18px;
-	width: 146px;
-	height: auto;
-}
-
-.item-info {
-	float: left;
-	margin-right: 18px;
-	padding: 10px;
-}
-
-.item-location{
-	background-color: rgba(137, 197, 185, 0.42);
-}
-
-.item-info .item-info-label {
-	font-weight: bold;
-}
-
-.item-info .item-info-copy {
-	font-weight: 300;
-}
 
 

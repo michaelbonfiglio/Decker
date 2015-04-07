@@ -53,6 +53,7 @@ gulp.task('watch', ['sync', 'css'], function () {
 	gulp.watch('app/*.html', reload);
 	gulp.watch('bower.json', ['wiredep']);
 	gulp.watch('app/css/sass/*.scss', ['css', reload] );
+	gulp.watch('app/css/sass/*/*.scss', ['css', reload] );
 	gulp.watch('app/css/*.css', ['styledocco']);
 });
 
