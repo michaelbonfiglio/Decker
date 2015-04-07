@@ -317,22 +317,22 @@
 			$('#menu').slicknav();
 
 
-			var $menuItems = $('#home-search-menu').on('hover', 'li', function (event) {
-				var $item = $(this);
-				var $desc = $item.find('.search-menu-desc');
-				$desc.toggleClass('desc-active');
-			});			
-
-
-			// var $menuItems = $('#home-search-menu').find('li');
-
-			// $menuItems.each(function (index) {
+			// var $menuItems = $('#home-search-menu').on('hover', 'li', function (event) {
 			// 	var $item = $(this);
 			// 	var $desc = $item.find('.search-menu-desc');
-			// 	$item.hover(function () {
-			// 		$desc.toggleClass('desc-active');
-			// 	});			
-			// });
+			// 	$desc.toggleClass('desc-active');
+			// });			
+
+
+			var $menuItems = $('#home-search-menu').find('li');
+
+			$menuItems.each(function (index) {
+				var $item = $(this);
+				var $desc = $item.find('.search-menu-desc');
+				$item.hover(function () {
+					$desc.toggleClass('desc-active');
+				});			
+			});
 
 
 			// for(i=0; i< $('#home-search-menu ul li').length; i++) {
