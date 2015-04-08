@@ -15,16 +15,14 @@
 
 			<div class="col-xs-12">
 				<div class="max-width">
-				<h1 class="decker">Decker Library</h1>
+					<h1 class="decker"><a href="index.html">Decker Library</a></h1>
 
-				<div class="login col-md-3 col-md-push-5">
-					
-					<a href="#" class="login-button">
-						Login
-					</a>
-
-
-				</div>
+					<div class="login col-md-3 col-md-push-5">
+						
+						<a href="#" class="login-button">
+							Login
+						</a>
+					</div>
 				</div>
 			</div>
 
@@ -43,9 +41,9 @@
 
 		<nav id="menu" class="col-xs-12 header-nav">
 			<ul class="max-width">
-				<li class="flyout nav-h1 col-md-2">
+				<li class="flyout nav-h1">
 
-					<a href="#">My Decker</a>
+					<a href="account.html">My Decker</a>
 					<div class="flyout-content">
 						<ul>
 							<li class="nav-h3"><a href="#">Holds</a></li>
@@ -56,14 +54,14 @@
 						</ul>
 					</div>
 				</li>
-				<li class="flyout nav-h1 col-md-2">
+				<li class="flyout nav-h1">
 
 					<a href="#">Using the Library</a>
 					<div class="flyout-content">
 						<div class="column">
 							<p class="nav-h2">Services</p>
 							<ul>
-								<li class="nav-h3"><a href="#">Computers</a></li>
+								<li class="nav-h3"><a href="text-page.html">Computers</a></li>
 								<li class="nav-h3"><a href="#">Print, Copy, Scan</a></li>
 								<li class="nav-h3"><a href="#">Screening Room</a></li>
 								<li class="nav-h3"><a href="#">Research Advisor</a></li>
@@ -83,7 +81,7 @@
 					</div>
 					
 				</li>
-				<li class="flyout nav-h1 col-md-2"><a href="#">Collections</a>
+				<li class="flyout nav-h1 nav-h1b"><a href="single-book.html">Collections</a>
 					<div class="flyout-content">
 						<div class="column">
 							<ul>
@@ -103,8 +101,8 @@
 						</div>
 					</div>	
 				</li>
-				<li class="nav-h1 col-md-2"><a href="#">News and Exhibits</a></li>
-				<li class="flyout nav-h1 col-md-2"><a href="#">About Decker</a>
+				<li class="nav-h1"><a href="exhibit.html">News and Exhibits</a></li>
+				<li class="flyout nav-h1"><a href="#">About Decker</a>
 					<div class="flyout-content">
 						<ul>
 							<li class="nav-h3"><a href="#">Staff</a></li>
@@ -112,7 +110,7 @@
 						</ul>
 					</div>
 				</li>
-				<li class="nav-h1 col-md-2"><a href="#">Help</a></li>
+				<li class="nav-h1"><a href="#">Help</a></li>
 			</ul>
 		</nav>
 
@@ -126,7 +124,7 @@
 				<ul>
 					<li id="search-menu-0">
 						<a class="search-menu-item" href="#"><span>Journals</span></a>
-						<div class="search-menu-desc"><span>Search the MICA Archive, Book Arts Catalog, and Artist Files.</span></div>
+						<div class="search-menu-desc"><span>Search journal titles to which the Decker Library has access.</span></div>
 						
 					</li>
 					<li id="search-menu-1">
@@ -136,26 +134,25 @@
 					</li>
 					<li id="search-menu-2">
 						<a class="search-menu-item menu-active" href="#"><span>Books</span></a>
-						<div class="search-menu-desc"><span>Search the MICA Archive, Book Arts Catalog, and Artist Files.</span></div>
+						<div class="search-menu-desc"><span>Search the Decker book collection.</span></div>
 						
 					</li>
 					<li id="search-menu-3">
 						<a class="search-menu-item" href="#"><span>Databases</span></a>
-						<div class="search-menu-desc"><span>Search the MICA Archive, Book Arts Catalog, and Artist Files.</span></div>
+						<div class="search-menu-desc"><span>Search primary sources and media.</span></div>
 						
 					</li>
 					<li id="search-menu-4">
 						<a class="search-menu-item" href="#"><span>Articles</span></a>
-						<div class="search-menu-desc"><span>Search the MICA Archive, Book Arts Catalog, and Artist Files.</span></div>
-						
+						<div class="search-menu-desc"><span>Search print holdings and online full-text.</span></div>
 					</li>
 				</ul>
 
 			</div>
 
-			<div class="home-search-bar col-sm-7" >
+			<div id="sbar" class="home-search-bar col-sm-7" >
 
-				<form  action="action_page.php" >
+				<form  action="search-result.html" >
 				<input class="home-search-input col-xs-10" type="text" name="search" value="">
 				<input class="home-search-button col-xs-2" type="submit" value="Search">
 				</form>
@@ -321,7 +318,25 @@
 			// 	var $item = $(this);
 			// 	var $desc = $item.find('.search-menu-desc');
 			// 	$desc.toggleClass('desc-active');
-			// });			
+			// });
+
+			// var sbars = [
+			//     "sbarOne",
+			//     "sbarTwo",
+			//     "sbarThree",
+			//     "sbarFour",
+			//     "sbarFive"
+			// ];	
+
+			// $( "#search-menu-0 a" ).click(function() {
+			// 	event.preventDefault();
+			// 	 $( "#sbar" ).animate({
+			// 	    marginTop: "0px",
+			// 	 }, 800 );
+
+			// 	  $( "#home-search-menu a" ).removeClass( "menu-active" );
+			// 	  $(this).addClass("menu-active");
+			// });		
 
 
 			var $menuItems = $('#home-search-menu').find('li');
@@ -331,8 +346,33 @@
 				var $desc = $item.find('.search-menu-desc');
 				$item.hover(function () {
 					$desc.toggleClass('desc-active');
-				});			
+				});		
 			});
+
+			var $menuBars = $('#home-search-menu').find('a');
+
+			$menuBars.each(function (index) {
+				var $item = $(this);
+
+				var $marg = index*80 + "px";
+				
+				$item.click(function () {
+				event.preventDefault();
+				  $( "#home-search-menu a" ).removeClass( "menu-active" );
+				  $(this).addClass("menu-active");
+				  $( "#sbar" ).animate({
+				    marginTop: $marg,
+				 	}, 800 );
+				  
+				});		
+			});
+
+			
+
+			console.log($menuItems.length);
+
+
+
 
 
 			// for(i=0; i< $('#home-search-menu ul li').length; i++) {

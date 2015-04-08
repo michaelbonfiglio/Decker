@@ -299,9 +299,22 @@ h2, .h2{
 	font-size: 36px;
 }
 
+.h3{
+      font-size: 30px;
+      font-family: $bolder;
+      font-weight: normal;
+      margin: 0;
+    }
+
+
 .decker{
 	text-transform: uppercase;
 	float: left;
+
+	a{
+		color: $black;
+		text-decoration: none;
+	}
 }
 
 .header-hours {
@@ -609,10 +622,59 @@ nav.header-nav{
 	background-color: $mica-grey;
 	background-clip: content-box;
 	margin-top: 30px;
+}
 
+.exhibit-next{
+	background-color: $mica-grey;
+	margin-top: 30px;
+
+	h4{
+		color: $white;
+		padding-left: 20px;
+	  	padding-right: 15px;
+		font-size: 16px;
+	    font-family: $bolder;
+	    font-weight: normal;
+	    text-transform: uppercase;
+	    letter-spacing: 1px;
+	    margin-bottom: 0;
+	    margin-top: 0;
+
+	}
+
+	p{
+		color: $white;
+		padding-left: 20px;
+		letter-spacing: .3px;
+		font-family: $thin;
+		margin-top: 8px;
+		padding-right: 15px;
+
+	}
+}
+
+.exhibit-past{
+	background-color: $mica-grey-lite;
+	margin-top: 30px;
 
 }
 
+.green-bord {
+  border: 10px solid $mica-green-lite;
+}
+
+.exhibit {
+
+	h2 {
+		padding-top: 6px;
+		border-top: 10px solid $mica-green;
+
+	}
+
+	.left, .right, .full{
+		width: 100%;
+	}
+}
 
 
 
@@ -660,13 +722,18 @@ Image + Content arrange throughout the site.
 
 /* # Other Pages */
 
-.book-single, .book-search {
+section.row{
+  margin-top: 30px;
+
+}
+
+.book-single, .book-search, .my-account {
 
   .item-info{
 
   	margin-bottom: 20px;
 
-    h1{
+    h1, .h1{
       font-size: 30px;
       font-family: $bolder;
       margin: 0;
@@ -722,6 +789,48 @@ Image + Content arrange throughout the site.
 
 	}
 
+	.item-more{
+
+		a.uncollapsed{
+			text-decoration: none;
+	        background-image: url("../img/minus.png");
+	        background-repeat: no-repeat;
+	        background-position: 6px 0;
+			font-family: $bold;
+			font-weight: bold;
+			color: $mica-green-lite;
+			height: 30px;
+			padding-left: 35px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+
+
+      }
+    	a.collapsed{
+        background-image: url("../img/plus.png");
+        background-repeat: no-repeat;
+      }
+
+		
+
+		table{
+			font-size: 12px;
+			line-height: 16px;
+		}
+
+		tr{
+		border-bottom: 1px solid $mica-green-lite;
+
+		}
+
+		th, td{
+			vertical-align: top;
+			padding-top: 10px;
+		padding-bottom: 10px;
+		}
+
+	}
+
 	
 
 }
@@ -732,7 +841,7 @@ Image + Content arrange throughout the site.
 	.page-search-input, .page-search-button{
 		border: 1px solid #000;
 		height: 40px;
-	}
+		font-size: 12px;	}
 
 	.page-search-button{
 		background-color: $black;
@@ -743,12 +852,49 @@ Image + Content arrange throughout the site.
 
 .book-search{
 
-	.book-item{
+	.book-item {
 		border-bottom: 1px solid $mica-green-lite;
+
+	}
+
+	.book-item + .book-item {
+		border-top: 1px solid $mica-green-lite;
+
+	}	
+
+}
+
+.my-account{
+
+	.book-item + .book-item {
+		border-top: 1px solid $mica-green-lite;
+	}
+
+	.account-sect{
+		background-color: $mica-green-lite;
+		color: $white;
+		font-family: $bolder;
+		font-weight: normal;
+		font-size: 16px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		padding: 5px;
+	}
+}
+
+
+
+
+
+.book-search, .my-account{
+
+	.book-item {
 		padding-bottom: 10px;
+		padding-top: 15px;
 		@include clearfix;
 
 	}
+
 	.item-img{
 		float: left;
 		width: 110px;
@@ -757,8 +903,8 @@ Image + Content arrange throughout the site.
 	}
 	.item-info{
 		float: left;
-		margin-left: 10px;
-		margin-bottom: 10px;
+		margin-left: 15px;
+		margin-bottom: 15px;
 
 		h1{
 			font-size: 18px;
@@ -766,7 +912,12 @@ Image + Content arrange throughout the site.
 
 		h2{
 			font-size: 12px;
+			line-height: 20px;
 		}
+	}
+
+	.item-title{
+		  max-width: 60%;
 	}
 
 	.item-location{
@@ -801,6 +952,59 @@ Image + Content arrange throughout the site.
 
 .search-nav{
 	clear: both;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 320px;
+	@include clearfix;
+
+	.nav-link{
+		  width: 20px;
+		  height: 20px;
+		  margin-right: 10px;
+		  text-decoration: none;
+		  color: #000;
+		  display: block;
+		  float: left;
+		  text-align: center;
+		  padding-top:3px;
+		  font-size: 12px;
+		  background-repeat: no-repeat;
+		  background-position: 0 4px;
+		  transition: background-color 1s ease;
+
+		  &:hover{
+		  	background-color: $mica-green-lite;
+		  }
+	}
+
+	.active{
+		background-color: $mica-green-lite;
+	}
+
+
+	.first {
+		background-image: url("../img/arrow-first.png");     
+	}
+	.back {
+		background-image: url("../img/arrow-back.png");
+	}
+	.next {
+		background-image: url("../img/arrow-next.png");
+	}
+	.last {
+		background-image: url("../img/arrow-last.png");
+        
+	}
+
+	.first, .back, .next, .last{
+		margin-right: 0;
+		&:hover{
+			background-color: $white;
+		}
+	}
+
 }
 
 
@@ -808,9 +1012,9 @@ Image + Content arrange throughout the site.
 	table{
 		width: 100%;
 	}
-
-	
 }
+
+
 
 
 .sidebar {

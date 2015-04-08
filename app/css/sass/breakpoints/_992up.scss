@@ -293,6 +293,9 @@ nav.header-nav{
         border-bottom: 2px solid $black;
         border-right: 1px solid $black;
         box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
+        float: left;
         
 
 
@@ -304,6 +307,10 @@ nav.header-nav{
             font-size: 16px;
             height: 100%;
         }
+      }
+
+      &.nav-h1b{
+        width:170px;
       }
 
       &.nav-h3{
@@ -332,6 +339,14 @@ nav.header-nav{
       color: #000;
 
         }
+  }
+
+  .nav-h1 +.nav-h1{
+    margin-left: 6.466%;
+  }
+
+  .nav-h1b +.nav-h1{
+    margin-left: 2.59%;
   }
 
   .nav-h2{
@@ -537,6 +552,35 @@ nav.header-nav{
     overflow: hidden;
 }
 
+.exhibit{
+  .left, .right, .full{
+    width: auto;
+  }
+
+  .full{
+  width: 100%;
+}
+}
+
+
+.left{
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+.right{
+  float: right;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.full{
+  width: 100%;
+}
+
+
+
 /* # Other Pages */
 
 
@@ -569,9 +613,27 @@ background-image: url("../img/tools-cite.png");
 background-repeat: no-repeat;
 }
 
+.update{
+background-image: url("../img/update.png");
+background-repeat: no-repeat;
+font-family: $bold;
+font-weight: bold;
+color: $mica-green-lite;
+height: 26px;
+padding-left: 35px;
+}
+
+.fines{
+  padding-left: 25px;
+  font-size: 60px;
+  font-family: $thin;
+  letter-spacing: 2px;
+
+}
 
 
-.book-single, .book-search {
+
+.book-single, .book-search, .my-account {
 
   .item-info{
 
@@ -597,7 +659,7 @@ background-repeat: no-repeat;
   }
 }
 
-.book-search{
+.book-search, .my-account{
 
   .book-item{
     padding-top: 20px;
@@ -624,7 +686,9 @@ background-repeat: no-repeat;
   }
 
   .item-title{
+    max-width: none;
     width: 70%;
+
   }
   .item-publication{
     width: 25%;
@@ -667,6 +731,28 @@ background-repeat: no-repeat;
   display: block;
   margin-bottom: 30px;
 
+  .shelf-back{
+    background-image: url("../img/arrow-back2.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: 160px;
+    left: 18px;
+  }
+
+  .shelf-next{
+    background-image: url("../img/arrow-next.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: 160px;
+    right: 18px;
+  }
+
   h3{
     width: 100%;
     color: $white;
@@ -677,6 +763,27 @@ background-repeat: no-repeat;
     padding: 20px;
     letter-spacing: 1px;
     margin-bottom: 0;
+  }
+
+
+  .item-info{
+    text-align: left;
+    padding: 20px;
+    font-size: 14px;
+
+    th, td{
+    vertical-align: top;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    }
+
+    th{
+      width: 100px;
+    }
+
+    tr {
+      border-bottom: 1px solid $mica-green-lite;
+    }
   }
 }
 
@@ -709,6 +816,7 @@ background-repeat: no-repeat;
       list-style-type: none;
       padding-left: 20px;
       padding-bottom: 10px;
+      padding-top: 5px;
 
       ul{
         padding-left: 0;
@@ -733,7 +841,8 @@ background-repeat: no-repeat;
           text-transform: uppercase;
           color: $black;
           letter-spacing: 1px;
-          font-size: 16px;
+          font-size: 14px;
+          padding-bottom: 4px;
           padding-left: 40px;
         }
     }
@@ -775,7 +884,6 @@ background-repeat: no-repeat;
 
     }
 
-
 }
 
 .cat-book{
@@ -794,7 +902,7 @@ background-repeat: no-repeat;
 }
 
 
-  .cat-button{
+.cat-button{
     color: $white;
     background-color: $mica-grey;
     text-transform: uppercase;
@@ -808,9 +916,42 @@ background-repeat: no-repeat;
     margin-bottom: 20px;
     width: 120px;
     text-align: center;
+}
+
+.search-nav{
+  float:right;
+}
+
+.shelf-item{
+  font-size: 12px;
+  padding: 20px;
+
+  @include clearfix;
+
+  .shelf-img{
+    width: 106px;
+    float: left;
+    margin-right: 15px;
   }
 
+  .shelf-title{
+    font-family: $bolder;
+   
+    
+  }
 
+  .item-location{
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .shelf-title, .shelf-author, .item-location{
+      display: block;
+      float: left;
+      max-width: 100px;
+      margin-top: 0;
+  }
+}
 
 
 

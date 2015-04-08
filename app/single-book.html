@@ -15,16 +15,14 @@
 
 			<div class="col-xs-12">
 				<div class="max-width">
-				<h1 class="decker">Decker Library</h1>
+					<h1 class="decker"><a href="index.html">Decker Library</a></h1>
 
-				<div class="login col-md-3 col-md-push-5">
-					
-					<a href="#" class="login-button">
-						Login
-					</a>
-
-
-				</div>
+					<div class="login col-md-3 col-md-push-5">
+						
+						<a href="#" class="login-button">
+							Login
+						</a>
+					</div>
 				</div>
 			</div>
 
@@ -43,9 +41,9 @@
 
 		<nav id="menu" class="col-xs-12 header-nav">
 			<ul class="max-width">
-				<li class="flyout nav-h1 col-md-2">
+				<li class="flyout nav-h1">
 
-					<a href="#">My Decker</a>
+					<a href="account.html">My Decker</a>
 					<div class="flyout-content">
 						<ul>
 							<li class="nav-h3"><a href="#">Holds</a></li>
@@ -56,14 +54,14 @@
 						</ul>
 					</div>
 				</li>
-				<li class="flyout nav-h1 col-md-2">
+				<li class="flyout nav-h1">
 
 					<a href="#">Using the Library</a>
 					<div class="flyout-content">
 						<div class="column">
 							<p class="nav-h2">Services</p>
 							<ul>
-								<li class="nav-h3"><a href="#">Computers</a></li>
+								<li class="nav-h3"><a href="text-page.html">Computers</a></li>
 								<li class="nav-h3"><a href="#">Print, Copy, Scan</a></li>
 								<li class="nav-h3"><a href="#">Screening Room</a></li>
 								<li class="nav-h3"><a href="#">Research Advisor</a></li>
@@ -83,7 +81,7 @@
 					</div>
 					
 				</li>
-				<li class="flyout nav-h1 col-md-2"><a href="#">Collections</a>
+				<li class="flyout nav-h1 nav-h1b"><a href="single-book.html">Collections</a>
 					<div class="flyout-content">
 						<div class="column">
 							<ul>
@@ -103,8 +101,8 @@
 						</div>
 					</div>	
 				</li>
-				<li class="nav-h1 col-md-2"><a href="#">News and Exhibits</a></li>
-				<li class="flyout nav-h1 col-md-2"><a href="#">About Decker</a>
+				<li class="nav-h1"><a href="exhibit.html">News and Exhibits</a></li>
+				<li class="flyout nav-h1"><a href="#">About Decker</a>
 					<div class="flyout-content">
 						<ul>
 							<li class="nav-h3"><a href="#">Staff</a></li>
@@ -112,7 +110,7 @@
 						</ul>
 					</div>
 				</li>
-				<li class="nav-h1 col-md-2"><a href="#">Help</a></li>
+				<li class="nav-h1"><a href="#">Help</a></li>
 			</ul>
 		</nav>
 
@@ -171,8 +169,30 @@
 								</tr>
 							</table>
 						</div>
-						<div class="item-info">
-							+ More Info
+						<div class="item-info item-more">
+							<a data-toggle="collapse" href="#collapseMore" class="uncollapsed">More Info</a>
+							<table id="collapseMore" class="collapse">
+								<tr>
+									<th class="item-info-label">Physical Description</th>
+									<td class="item-info-copy">431 pages : illustrations (chiefly color) ; 28 cm.</td>
+								</tr>
+								<tr>
+									<th class="item-info-label">Contents</th>
+									<td class="item-info-copy">Introduction -- Inventory -- Inside Forst -- Neubau Forest -- Texture -- Ambience -- Appendix -- Data Download</td>
+								</tr>
+								<tr>
+									<th class="item-info-label">Summary</th>
+									<td class="item-info-copy">Neubau Forst Catalogue' is a collection of detailed silhouettes of urban trees and separate tree sculptures. In years of manual work, using a method developed especially for this project, these details have been digitally removed from their original urban surroundings in Berlin. The materials are distinguished by their extent, outstanding quality of detail, and excellent resolution of the usual autotraced digital tree library.The Berlin trees were selected according to a special matrix. The letters of the name of the design studio, 'Neubau', were laid over a map of Berlin. The trees that werelocated at the structural anchor points of the letters were marked to appear in the 'Neubau Forst Catalogue'. Over a period of time, from 2009 to 2013, these trees were systematically photographed, documented, and catalogued in the summer and winter seasons. Neubau's process of selection and distillation gives the trees a timeless validity, and they can be used universally in future images. Additionally, so-called treemodules; were removed from existing separate trees. They can be set in front of both dark and light backgrounds of any kind and photographed without any flash. There are endless combinations of ready-to-use trees and different modules.</td>
+								</tr>
+								<tr>
+									<th class="item-info-label">Subject Term</th>
+									<td class="item-info-copy">Trees -- Pictorial works -- Catalogs. Trees -- Pictorial works. Silhouettes.Graphic arts -- Handbooks, manuals, etc.Computer graphics.</td>
+								</tr>
+								<tr>
+									<th class="item-info-label">Electronic Access</th>
+									<td class="item-info-copy">Neubau Forst web page</td>
+								</tr>
+							</table>
 						</div>
 					</div>
 
@@ -182,15 +202,18 @@
 							<h3>Search the Shelf</h3>
 
 							<div class="shelf-item">
-								<img class="shelf-img" src="" />
+								<img class="shelf-img" src="img/port.jpg" />
 								<p class="shelf-title">Contemporary Iranian Art: From the Street to the Studio</p>
 								<p class="shelf-author">Grigor, Talinn</p>
 
 								<div class="item-location">
-									<p class="shelf-location"></p>
+								 QK475.6 .N48X 2014
 
 								</div>
 							</div>
+
+							<a class="shelf-back" href="#"></a>
+							<a class="shelf-next"  href="#"></a>
 
 
 						</div>
@@ -310,6 +333,7 @@
 		<!-- build:js scripts/site.js -->
 		<!-- bower:js -->
 		<script src="scripts/jquery-2.1.3.min.js"></script>
+		<script src="scripts/bootstrap.js"></script>
 		<script src="scripts/jquery.slicknav.min.js"></script>
 		<!-- endbower -->
 		<!-- endbuild -->
@@ -319,6 +343,7 @@
 
 
 			$('#menu').slicknav();
+			$('.collapse').collapse({toggle: false});
 
 
 		

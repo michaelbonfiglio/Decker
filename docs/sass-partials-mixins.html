@@ -1267,9 +1267,18 @@ h1, .h1 {
 h2, .h2 {
   font-size: 36px; }
 
+.h3 {
+  font-size: 30px;
+  font-family: 'Griffith Gothic Black';
+  font-weight: normal;
+  margin: 0; }
+
 .decker {
   text-transform: uppercase;
   float: left; }
+  .decker a {
+    color: #000;
+    text-decoration: none; }
 
 .header-hours {
   background-color: rgba(137, 197, 185, 0.42);
@@ -1471,6 +1480,41 @@ nav.header-nav {
   background-clip: content-box;
   margin-top: 30px; }
 
+.exhibit-next {
+  background-color: #57585a;
+  margin-top: 30px; }
+  .exhibit-next h4 {
+    color: #FFF;
+    padding-left: 20px;
+    padding-right: 15px;
+    font-size: 16px;
+    font-family: 'Griffith Gothic Black';
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    margin-top: 0; }
+  .exhibit-next p {
+    color: #FFF;
+    padding-left: 20px;
+    letter-spacing: .3px;
+    font-family: 'Griffith Gothic Thin';
+    margin-top: 8px;
+    padding-right: 15px; }
+
+.exhibit-past {
+  background-color: #d2d2d2;
+  margin-top: 30px; }
+
+.green-bord {
+  border: 10px solid rgba(137, 197, 185, 0.42); }
+
+.exhibit h2 {
+  padding-top: 6px;
+  border-top: 10px solid #89c5b9; }
+.exhibit .left, .exhibit .right, .exhibit .full {
+  width: 100%; }
+
 /* # Media Object
 
 Image + Content arrange throughout the site.
@@ -1503,30 +1547,33 @@ Image + Content arrange throughout the site.
   font-weight: 300; }
 
 /* # Other Pages */
-.book-single .item-info, .book-search .item-info {
+section.row {
+  margin-top: 30px; }
+
+.book-single .item-info, .book-search .item-info, .my-account .item-info {
   margin-bottom: 20px; }
-  .book-single .item-info h1, .book-search .item-info h1 {
+  .book-single .item-info h1, .book-single .item-info .h1, .book-search .item-info h1, .book-search .item-info .h1, .my-account .item-info h1, .my-account .item-info .h1 {
     font-size: 30px;
     font-family: 'Griffith Gothic Black';
     margin: 0; }
-  .book-single .item-info h2, .book-search .item-info h2 {
+  .book-single .item-info h2, .book-search .item-info h2, .my-account .item-info h2 {
     font-size: 18px;
     line-height: 30px;
     font-family: 'Griffith Gothic Light';
     font-weight: normal;
     margin: 0; }
-  .book-single .item-info table, .book-search .item-info table {
+  .book-single .item-info table, .book-search .item-info table, .my-account .item-info table {
     text-align: left;
     padding-bottom: 10px;
     padding-top: 10px; }
-    .book-single .item-info table th, .book-search .item-info table th {
+    .book-single .item-info table th, .book-search .item-info table th, .my-account .item-info table th {
       width: 50%;
       font-family: 'Griffith Gothic Black';
       font-weight: normal;
       padding-left: 10px; }
-    .book-single .item-info table td, .book-search .item-info table td {
+    .book-single .item-info table td, .book-search .item-info table td, .my-account .item-info table td {
       padding-left: 10px; }
-    .book-single .item-info table tr, .book-search .item-info table tr {
+    .book-single .item-info table tr, .book-search .item-info table tr, .my-account .item-info table tr {
       width: 100%; }
 
 .book-single .item-publication table {
@@ -1534,42 +1581,87 @@ Image + Content arrange throughout the site.
   line-height: 48px; }
 .book-single .item-publication tr {
   border-bottom: 1px solid rgba(137, 197, 185, 0.42); }
+.book-single .item-more a.uncollapsed {
+  text-decoration: none;
+  background-image: url("..//Users/michaelbonfiglio/Desktop/class-05/app/css/sass/partials/../img/minus.png");
+  background-repeat: no-repeat;
+  background-position: 6px 0;
+  font-family: 'Griffith Gothic';
+  font-weight: bold;
+  color: rgba(137, 197, 185, 0.42);
+  height: 30px;
+  padding-left: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+.book-single .item-more a.collapsed {
+  background-image: url("..//Users/michaelbonfiglio/Desktop/class-05/app/css/sass/partials/../img/plus.png");
+  background-repeat: no-repeat; }
+.book-single .item-more table {
+  font-size: 12px;
+  line-height: 16px; }
+.book-single .item-more tr {
+  border-bottom: 1px solid rgba(137, 197, 185, 0.42); }
+.book-single .item-more th, .book-single .item-more td {
+  vertical-align: top;
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 .search-page .page-search-input, .search-page .page-search-button {
   border: 1px solid #000;
-  height: 40px; }
+  height: 40px;
+  font-size: 12px; }
 .search-page .page-search-button {
   background-color: #000;
   color: #FFF; }
 
 .book-search .book-item {
-  border-bottom: 1px solid rgba(137, 197, 185, 0.42);
-  padding-bottom: 10px; }
-  .book-search .book-item:before, .book-search .book-item:after {
+  border-bottom: 1px solid rgba(137, 197, 185, 0.42); }
+.book-search .book-item + .book-item {
+  border-top: 1px solid rgba(137, 197, 185, 0.42); }
+
+.my-account .book-item + .book-item {
+  border-top: 1px solid rgba(137, 197, 185, 0.42); }
+.my-account .account-sect {
+  background-color: rgba(137, 197, 185, 0.42);
+  color: #FFF;
+  font-family: 'Griffith Gothic Black';
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px; }
+
+.book-search .book-item, .my-account .book-item {
+  padding-bottom: 10px;
+  padding-top: 15px; }
+  .book-search .book-item:before, .book-search .book-item:after, .my-account .book-item:before, .my-account .book-item:after {
     content: " ";
     display: table; }
-  .book-search .book-item:after {
+  .book-search .book-item:after, .my-account .book-item:after {
     clear: both; }
-.book-search .item-img {
+.book-search .item-img, .my-account .item-img {
   float: left;
   width: 110px;
   height: auto; }
-.book-search .item-info {
+.book-search .item-info, .my-account .item-info {
   float: left;
-  margin-left: 10px;
-  margin-bottom: 10px; }
-  .book-search .item-info h1 {
+  margin-left: 15px;
+  margin-bottom: 15px; }
+  .book-search .item-info h1, .my-account .item-info h1 {
     font-size: 18px; }
-  .book-search .item-info h2 {
-    font-size: 12px; }
-.book-search .item-location table {
+  .book-search .item-info h2, .my-account .item-info h2 {
+    font-size: 12px;
+    line-height: 20px; }
+.book-search .item-title, .my-account .item-title {
+  max-width: 60%; }
+.book-search .item-location table, .my-account .item-location table {
   font-size: 11px;
   line-height: 22px; }
-.book-search .item-location td {
+.book-search .item-location td, .my-account .item-location td {
   padding-right: 10px; }
-.book-search .item-publication table th {
+.book-search .item-publication table th, .my-account .item-publication table th {
   padding-left: 0; }
-.book-search .item-publication, .book-search .item-tools {
+.book-search .item-publication, .book-search .item-tools, .my-account .item-publication, .my-account .item-tools {
   display: none; }
 
 .item-location table {
@@ -1577,7 +1669,48 @@ Image + Content arrange throughout the site.
   line-height: 36px; }
 
 .search-nav {
-  clear: both; }
+  clear: both;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px; }
+  .search-nav:before, .search-nav:after {
+    content: " ";
+    display: table; }
+  .search-nav:after {
+    clear: both; }
+  .search-nav .nav-link {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    float: left;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 12px;
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+    -webkit-transition: background-color 1s ease;
+            transition: background-color 1s ease; }
+    .search-nav .nav-link:hover {
+      background-color: rgba(137, 197, 185, 0.42); }
+  .search-nav .active {
+    background-color: rgba(137, 197, 185, 0.42); }
+  .search-nav .first {
+    background-image: url("..//Users/michaelbonfiglio/Desktop/class-05/app/css/sass/partials/../img/arrow-first.png"); }
+  .search-nav .back {
+    background-image: url("..//Users/michaelbonfiglio/Desktop/class-05/app/css/sass/partials/../img/arrow-back.png"); }
+  .search-nav .next {
+    background-image: url("..//Users/michaelbonfiglio/Desktop/class-05/app/css/sass/partials/../img/arrow-next.png"); }
+  .search-nav .last {
+    background-image: url("..//Users/michaelbonfiglio/Desktop/class-05/app/css/sass/partials/../img/arrow-last.png"); }
+  .search-nav .first, .search-nav .back, .search-nav .next, .search-nav .last {
+    margin-right: 0; }
+    .search-nav .first:hover, .search-nav .back:hover, .search-nav .next:hover, .search-nav .last:hover {
+      background-color: #FFF; }
 
 .item-publication table {
   width: 100%; }
@@ -2067,13 +2200,18 @@ Stylesheet: 992px and Up Stylesheet
           border-left: 1px solid #000;
           border-bottom: 2px solid #000;
           border-right: 1px solid #000;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+          padding-left: 15px;
+          padding-right: 15px;
+          float: left; }
           nav.header-nav ul li.nav-h1 a {
             font-family: 'Griffith Gothic Black';
             color: #fff;
             letter-spacing: 1.2px;
             font-size: 16px;
             height: 100%; }
+        nav.header-nav ul li.nav-h1b {
+          width: 170px; }
         nav.header-nav ul li.nav-h3 a {
           font-family: 'Griffith Gothic Light';
           color: #000;
@@ -2088,6 +2226,10 @@ Stylesheet: 992px and Up Stylesheet
       box-sizing: border-box; }
       nav.header-nav .nav-h1:hover a {
         color: #000; }
+    nav.header-nav .nav-h1 + .nav-h1 {
+      margin-left: 6.466%; }
+    nav.header-nav .nav-h1b + .nav-h1 {
+      margin-left: 2.59%; }
     nav.header-nav .nav-h2 {
       font-size: 14px;
       text-transform: uppercase;
@@ -2217,6 +2359,20 @@ Stylesheet: 992px and Up Stylesheet
   .exhibit-left, .exhibit-right {
     height: 320px;
     overflow: hidden; }
+  .exhibit .left, .exhibit .right, .exhibit .full {
+    width: auto; }
+  .exhibit .full {
+    width: 100%; }
+  .left {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 15px; }
+  .right {
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 15px; }
+  .full {
+    width: 100%; }
   /* # Other Pages */
   section.row {
     margin-bottom: 30px; }
@@ -2236,38 +2392,52 @@ Stylesheet: 992px and Up Stylesheet
   .cite-it {
     background-image: url("..//Users/michaelbonfiglio/Desktop/class-05/app/css/sass/partials/../img/tools-cite.png");
     background-repeat: no-repeat; }
-  .book-single .item-info h1, .book-search .item-info h1 {
+  .update {
+    background-image: url("..//Users/michaelbonfiglio/Desktop/class-05/app/css/sass/partials/../img/update.png");
+    background-repeat: no-repeat;
+    font-family: 'Griffith Gothic';
+    font-weight: bold;
+    color: rgba(137, 197, 185, 0.42);
+    height: 26px;
+    padding-left: 35px; }
+  .fines {
+    padding-left: 25px;
+    font-size: 60px;
+    font-family: 'Griffith Gothic Thin';
+    letter-spacing: 2px; }
+  .book-single .item-info h1, .book-search .item-info h1, .my-account .item-info h1 {
     font-size: 36px; }
-  .book-single .item-info h2, .book-search .item-info h2 {
+  .book-single .item-info h2, .book-search .item-info h2, .my-account .item-info h2 {
     font-size: 22px;
     line-height: 34px; }
   .search-page .page-search-input, .search-page .page-search-button {
     height: 40px; }
-  .book-search .book-item {
+  .book-search .book-item, .my-account .book-item {
     padding-top: 20px;
     padding-bottom: 20px; }
-  .book-search .item-img {
+  .book-search .item-img, .my-account .item-img {
     width: 146px; }
-  .book-search .item-info {
+  .book-search .item-info, .my-account .item-info {
     margin-left: 20px;
     margin-bottom: 10px; }
-    .book-search .item-info h1 {
+    .book-search .item-info h1, .my-account .item-info h1 {
       font-size: 24px; }
-    .book-search .item-info h2 {
+    .book-search .item-info h2, .my-account .item-info h2 {
       font-size: 14px; }
-  .book-search .item-title {
+  .book-search .item-title, .my-account .item-title {
+    max-width: none;
     width: 70%; }
-  .book-search .item-publication {
+  .book-search .item-publication, .my-account .item-publication {
     width: 25%; }
-  .book-search .item-location {
+  .book-search .item-location, .my-account .item-location {
     width: 33%; }
-  .book-search .item-tools {
+  .book-search .item-tools, .my-account .item-tools {
     width: 12%; }
-    .book-search .item-tools .tool {
+    .book-search .item-tools .tool, .my-account .item-tools .tool {
       margin-left: 0;
       padding-left: 30px;
       margin-bottom: 18px; }
-  .book-search .item-publication, .book-search .item-tools, .book-search .item-location {
+  .book-search .item-publication, .book-search .item-tools, .book-search .item-location, .my-account .item-publication, .my-account .item-tools, .my-account .item-location {
     display: block;
     font-size: 12px;
     line-height: 22px; }
@@ -2276,6 +2446,24 @@ Stylesheet: 992px and Up Stylesheet
   .sidebar {
     display: block;
     margin-bottom: 30px; }
+    .sidebar .shelf-back {
+      background-image: url("..//Users/michaelbonfiglio/Desktop/class-05/app/css/sass/partials/../img/arrow-back2.png");
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      display: block;
+      position: absolute;
+      top: 160px;
+      left: 18px; }
+    .sidebar .shelf-next {
+      background-image: url("..//Users/michaelbonfiglio/Desktop/class-05/app/css/sass/partials/../img/arrow-next.png");
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      display: block;
+      position: absolute;
+      top: 160px;
+      right: 18px; }
     .sidebar h3 {
       width: 100%;
       color: #FFF;
@@ -2286,6 +2474,18 @@ Stylesheet: 992px and Up Stylesheet
       padding: 20px;
       letter-spacing: 1px;
       margin-bottom: 0; }
+    .sidebar .item-info {
+      text-align: left;
+      padding: 20px;
+      font-size: 14px; }
+      .sidebar .item-info th, .sidebar .item-info td {
+        vertical-align: top;
+        padding-top: 15px;
+        padding-bottom: 15px; }
+      .sidebar .item-info th {
+        width: 100px; }
+      .sidebar .item-info tr {
+        border-bottom: 1px solid rgba(137, 197, 185, 0.42); }
   .sidebar-green {
     border: 1px solid #89c5b9; }
     .sidebar-green h3 {
@@ -2303,7 +2503,8 @@ Stylesheet: 992px and Up Stylesheet
     .filter ul {
       list-style-type: none;
       padding-left: 20px;
-      padding-bottom: 10px; }
+      padding-bottom: 10px;
+      padding-top: 5px; }
       .filter ul ul {
         padding-left: 0; }
     .filter a {
@@ -2317,7 +2518,8 @@ Stylesheet: 992px and Up Stylesheet
         text-transform: uppercase;
         color: #000;
         letter-spacing: 1px;
-        font-size: 16px;
+        font-size: 14px;
+        padding-bottom: 4px;
         padding-left: 40px; }
     .filter .filter-h1 > .uncollapsed {
       background-image: url("..//Users/michaelbonfiglio/Desktop/class-05/app/css/sass/partials/../img/toggle-minus.png");
@@ -2364,6 +2566,30 @@ Stylesheet: 992px and Up Stylesheet
     margin-bottom: 20px;
     width: 120px;
     text-align: center; }
+  .search-nav {
+    float: right; }
+  .shelf-item {
+    font-size: 12px;
+    padding: 20px; }
+    .shelf-item:before, .shelf-item:after {
+      content: " ";
+      display: table; }
+    .shelf-item:after {
+      clear: both; }
+    .shelf-item .shelf-img {
+      width: 106px;
+      float: left;
+      margin-right: 15px; }
+    .shelf-item .shelf-title {
+      font-family: 'Griffith Gothic Black'; }
+    .shelf-item .item-location {
+      padding: 5px;
+      font-size: 10px; }
+    .shelf-item .shelf-title, .shelf-item .shelf-author, .shelf-item .item-location {
+      display: block;
+      float: left;
+      max-width: 100px;
+      margin-top: 0; }
   /* Footer */
   footer {
     padding-top: 60px;
