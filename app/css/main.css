@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:900,500,100,300);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -394,7 +395,9 @@ Basic styling of html tags.
 
 */
 body {
-  font-family: 'Griffith Gothic Light'; }
+  font-family: 'Griffith Gothic Light', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300; }
 
 /* ##Grid */
 td, th {
@@ -640,9 +643,9 @@ header:after {
 
 h1, .h1 {
   font-size: 30px;
-  font-family: 'Griffith Gothic Thin';
+  font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 100;
   letter-spacing: 1px;
   margin-top: 30;
   margin-bottom: 30; }
@@ -652,8 +655,9 @@ h2, .h2 {
 
 .h3 {
   font-size: 30px;
-  font-family: 'Griffith Gothic Black';
-  font-weight: normal;
+  font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
   margin: 0; }
 
 .decker {
@@ -674,19 +678,24 @@ h2, .h2 {
 
 .hours-open {
   text-transform: uppercase;
-  font-family: 'Griffith Gothic Black';
+  font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
   font-size: 10px;
   letter-spacing: .6px; }
 
 .hours-times {
-  font-family: 'Griffith Gothic Light';
+  font-family: 'Griffith Gothic Light', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 10px;
   letter-spacing: .3px; }
 
 .days {
   text-transform: uppercase;
-  font-family: 'Griffith Gothic';
-  font-weight: bold; }
+  font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500; }
 
 /* ##Navigation
 
@@ -696,7 +705,7 @@ h2, .h2 {
 #menu {
   display: none; }
 
-.login {
+.login-button {
   display: none; }
 
 nav ul {
@@ -716,13 +725,17 @@ nav.header-nav {
         padding-top: 16px;
         box-sizing: border-box; }
         nav.header-nav ul li.nav-h1 a {
-          font-family: 'Griffith Gothic Black';
+          font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+          font-style: normal;
+          font-weight: 900;
           color: #fff;
           letter-spacing: 1.2px;
           font-size: 16px;
           height: 100%; }
       nav.header-nav ul li.nav-h3 a {
-        font-family: 'Griffith Gothic Light';
+        font-family: 'Griffith Gothic Light', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 300;
         color: #000;
         font-size: 14px;
         line-height: 20px; }
@@ -759,12 +772,10 @@ nav.header-nav {
   .home-search:after {
     clear: both; }
 
-#home-search-menu {
-  padding-right: 0; }
-  #home-search-menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 0; }
+#home-search-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0; }
 
 .search-menu-desc {
   display: none; }
@@ -782,7 +793,9 @@ nav.header-nav {
   color: #FFF;
   text-transform: uppercase;
   font-size: 10px;
-  font-family: 'Griffith Gothic Thin';
+  font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 100;
   letter-spacing: 1px;
   opacity: .42;
   text-align: center;
@@ -792,10 +805,26 @@ nav.header-nav {
   .search-menu-item:hover {
     opacity: 1; }
 
+#search-menu-0 .search-menu-item {
+  width: 17%; }
+
+#search-menu-1 .search-menu-item {
+  width: 35%; }
+
+#search-menu-2 .search-menu-item {
+  width: 13%; }
+
+#search-menu-3 .search-menu-item {
+  width: 19%; }
+
+#search-menu-4 .search-menu-item {
+  width: 16%; }
+
 .menu-active {
   opacity: 1;
-  font-family: 'Griffith Gothic';
-  font-weight: bold; }
+  font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500; }
 
 .home-search-bar {
   margin-top: 40px; }
@@ -814,7 +843,9 @@ nav.header-nav {
   border: 1px solid #000;
   margin: 0;
   padding: 0;
-  font-family: 'Griffith Gothic';
+  font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: 14px;
   float: left;
   letter-spacing: 1px; }
@@ -831,21 +862,25 @@ nav.header-nav {
   padding-right: 15px; }
   .exhibit-text h3 {
     font-size: 40px;
-    font-family: 'Griffith Gothic Thin';
-    font-weight: normal;
+    font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 100;
     margin-top: 0;
     margin-bottom: 30px;
     padding-top: 15px; }
   .exhibit-text h4 {
     font-size: 16px;
-    font-family: 'Griffith Gothic Black';
-    font-weight: normal;
+    font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 0; }
   .exhibit-text p {
     letter-spacing: .3px;
-    font-family: 'Griffith Gothic Thin';
+    font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 100;
     margin-top: 8px;
     padding-right: 15px; }
 
@@ -871,8 +906,9 @@ nav.header-nav {
     padding-left: 20px;
     padding-right: 15px;
     font-size: 16px;
-    font-family: 'Griffith Gothic Black';
-    font-weight: normal;
+    font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 0;
@@ -881,7 +917,9 @@ nav.header-nav {
     color: #FFF;
     padding-left: 20px;
     letter-spacing: .3px;
-    font-family: 'Griffith Gothic Thin';
+    font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 100;
     margin-top: 8px;
     padding-right: 15px; }
 
@@ -897,6 +935,23 @@ nav.header-nav {
   border-top: 10px solid #89c5b9; }
 .exhibit .left, .exhibit .right, .exhibit .full {
   width: 100%; }
+
+@media (min-width: 600px) {
+  .exhibit-left, .exhibit-right {
+    height: 320px;
+    overflow: hidden; }
+  .exhibit-left .exhibit-text {
+    width: 42.86%;
+    float: left; }
+  .exhibit-left .exhibit-img {
+    width: 57.14%;
+    float: left;
+    overflow: hidden; }
+    .exhibit-left .exhibit-img img {
+      height: 100%;
+      width: auto;
+      position: absolute;
+      right: 15px; } }
 
 /* # Media Object
 
@@ -937,13 +992,16 @@ section.row {
   margin-bottom: 20px; }
   .book-single .item-info h1, .book-single .item-info .h1, .book-search .item-info h1, .book-search .item-info .h1, .my-account .item-info h1, .my-account .item-info .h1 {
     font-size: 30px;
-    font-family: 'Griffith Gothic Black';
+    font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
     margin: 0; }
   .book-single .item-info h2, .book-search .item-info h2, .my-account .item-info h2 {
     font-size: 18px;
     line-height: 30px;
-    font-family: 'Griffith Gothic Light';
-    font-weight: normal;
+    font-family: 'Griffith Gothic Light', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
     margin: 0; }
   .book-single .item-info table, .book-search .item-info table, .my-account .item-info table {
     text-align: left;
@@ -951,8 +1009,9 @@ section.row {
     padding-top: 10px; }
     .book-single .item-info table th, .book-search .item-info table th, .my-account .item-info table th {
       width: 50%;
-      font-family: 'Griffith Gothic Black';
-      font-weight: normal;
+      font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 900;
       padding-left: 10px; }
     .book-single .item-info table td, .book-search .item-info table td, .my-account .item-info table td {
       padding-left: 10px; }
@@ -969,8 +1028,9 @@ section.row {
   background-image: url("../img/minus.png");
   background-repeat: no-repeat;
   background-position: 6px 0;
-  font-family: 'Griffith Gothic';
-  font-weight: bold;
+  font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
   color: rgba(137, 197, 185, 0.42);
   height: 30px;
   padding-left: 35px;
@@ -1005,11 +1065,12 @@ section.row {
 .my-account .book-item + .book-item {
   border-top: 1px solid rgba(137, 197, 185, 0.42); }
 .my-account .account-sect {
-  background-color: rgba(137, 197, 185, 0.42);
+  background-color: #000;
   color: #FFF;
-  font-family: 'Griffith Gothic Black';
-  font-weight: normal;
-  font-size: 16px;
+  font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 5px; }
@@ -1103,15 +1164,17 @@ section.row {
 
 .text-page h2 {
   font-size: 30px;
-  font-family: 'Griffith Gothic Black';
-  font-weight: normal;
+  font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
   width: 100%;
   padding-bottom: 4px;
   border-bottom: 1px solid rgba(137, 197, 185, 0.42); }
 .text-page h3 {
   text-transform: uppercase;
-  font-family: 'Griffith Gothic Black';
-  font-weight: normal;
+  font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
   font-size: 14px;
   margin-bottom: 0;
   margin-top: 20px;
@@ -1206,7 +1269,6 @@ tbody.collapse.in {
   display: block;
   padding: 3px 20px;
   clear: both;
-  font-weight: normal;
   line-height: 1.42857143;
   color: #333333;
   white-space: nowrap; }
@@ -1387,7 +1449,16 @@ Stylesheet: 768px and Up Stylesheet
   .col-sm-offset-1 {
     margin-left: 8.33333%; }
   .col-sm-offset-0 {
-    margin-left: 0%; } }
+    margin-left: 0%; }
+  .max-widthB {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto; }
+    .max-widthB:before, .max-widthB:after {
+      content: " ";
+      display: table; }
+    .max-widthB:after {
+      clear: both; } }
 
 /* Medium devices (desktops, 992px and up) Styles in _992up.scss */
 @media (min-width: 992px) {
@@ -1501,14 +1572,14 @@ Stylesheet: 992px and Up Stylesheet
     margin-left: 8.33333%; }
   .col-md-offset-0 {
     margin-left: 0%; }
-  .max-width {
+  .max-width, .max-widthB {
     max-width: 1200px;
     margin-right: auto;
     margin-left: auto; }
-    .max-width:before, .max-width:after {
+    .max-width:before, .max-width:after, .max-widthB:before, .max-widthB:after {
       content: " ";
       display: table; }
-    .max-width:after {
+    .max-width:after, .max-widthB:after {
       clear: both; }
   /* ##Headers
 
@@ -1540,29 +1611,22 @@ Stylesheet: 992px and Up Stylesheet
     display: none; }
   #menu {
     display: block; }
-  .login {
-    display: block;
-    float: left; }
   .login-button {
     background-color: #89c5b9;
     color: #FFF;
     width: 90px;
     height: 35px;
     letter-spacing: 1.4px;
-    font-family: 'Griffith Gothic';
-    font-weight: bold;
+    font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
     font-size: 17px;
     text-transform: uppercase;
     text-align: center;
     padding-top: 8px;
-    position: absolute;
-    right: 0;
-    text-decoration: none; }
-    .login-button:before, .login-button:after {
-      content: " ";
-      display: table; }
-    .login-button:after {
-      clear: both; }
+    text-decoration: none;
+    float: right;
+    display: block; }
   nav ul {
     margin-top: 0;
     padding: 0; }
@@ -1588,7 +1652,9 @@ Stylesheet: 992px and Up Stylesheet
           padding-right: 15px;
           float: left; }
           nav.header-nav ul li.nav-h1 a {
-            font-family: 'Griffith Gothic Black';
+            font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 900;
             color: #fff;
             letter-spacing: 1.2px;
             font-size: 16px;
@@ -1596,7 +1662,9 @@ Stylesheet: 992px and Up Stylesheet
         nav.header-nav ul li.nav-h1b {
           width: 170px; }
         nav.header-nav ul li.nav-h3 a {
-          font-family: 'Griffith Gothic Light';
+          font-family: 'Griffith Gothic Light', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+          font-style: normal;
+          font-weight: 300;
           color: #000;
           font-size: 14px;
           line-height: 20px; }
@@ -1610,9 +1678,9 @@ Stylesheet: 992px and Up Stylesheet
       nav.header-nav .nav-h1:hover a {
         color: #000; }
     nav.header-nav .nav-h1 + .nav-h1 {
-      margin-left: 6.466%; }
+      margin-left: 2.466%; }
     nav.header-nav .nav-h1b + .nav-h1 {
-      margin-left: 2.59%; }
+      margin-left: 0; }
     nav.header-nav .nav-h2 {
       font-size: 14px;
       text-transform: uppercase;
@@ -1643,25 +1711,9 @@ Stylesheet: 992px and Up Stylesheet
       list-style-type: none;
       padding: 0;
       margin-top: 0; }
-  .search-menu-desc {
-    display: block;
-    text-align: right;
-    margin-right: 15px;
-    float: right;
-    font-size: 12px;
-    height: 80px;
-    max-width: 124px;
-    visibility: hidden; }
-    .search-menu-desc span {
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      display: block; }
-  .desc-active {
-    visibility: visible; }
-  .search-menu-item {
+    #home-search-menu .desc-active {
+      visibility: visible; }
+  #search-menu-0 .search-menu-item, #search-menu-1 .search-menu-item, #search-menu-2 .search-menu-item, #search-menu-3 .search-menu-item, #search-menu-4 .search-menu-item {
     width: 146px;
     float: right;
     display: block;
@@ -1672,26 +1724,29 @@ Stylesheet: 992px and Up Stylesheet
     color: #FFF;
     text-transform: uppercase;
     font-size: 16px;
-    font-family: 'Griffith Gothic Thin';
+    font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 100;
     letter-spacing: 1px;
     opacity: .42;
     text-align: center;
     box-sizing: border-box;
     -webkit-transition: opacity 1s ease-in-out;
             transition: opacity 1s ease-in-out; }
-    .search-menu-item:hover {
+    #search-menu-0 .search-menu-item:hover, #search-menu-1 .search-menu-item:hover, #search-menu-2 .search-menu-item:hover, #search-menu-3 .search-menu-item:hover, #search-menu-4 .search-menu-item:hover {
       opacity: 1; }
-    .search-menu-item span {
+    #search-menu-0 .search-menu-item span, #search-menu-1 .search-menu-item span, #search-menu-2 .search-menu-item span, #search-menu-3 .search-menu-item span, #search-menu-4 .search-menu-item span {
       position: relative;
       top: 50%;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       display: block; }
-  .menu-active {
+  #search-menu-0 .menu-active, #search-menu-1 .menu-active, #search-menu-2 .menu-active, #search-menu-3 .menu-active, #search-menu-4 .menu-active {
     opacity: 1;
-    font-family: 'Griffith Gothic';
-    font-weight: bold; }
+    font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500; }
   .home-search-bar {
     float: left;
     margin-top: 160px; }
@@ -1701,7 +1756,9 @@ Stylesheet: 992px and Up Stylesheet
     box-sizing: border-box; }
   .home-search-button {
     height: 80px;
-    font-family: 'Griffith Gothic';
+    font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
     font-size: 20px; }
   .exhibit {
     margin-bottom: 60px; }
@@ -1711,34 +1768,46 @@ Stylesheet: 992px and Up Stylesheet
     padding-right: 15px; }
     .exhibit-text h3 {
       font-size: 40px;
-      font-family: 'Griffith Gothic Thin';
-      font-weight: normal;
+      font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 100;
       padding-left: 15px; }
     .exhibit-text h4 {
       font-size: 16px;
-      font-family: 'Griffith Gothic Black';
-      font-weight: normal;
+      font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 900;
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 0;
       padding-left: 15px; }
     .exhibit-text p {
       letter-spacing: .3px;
-      font-family: 'Griffith Gothic Thin';
+      font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 100;
       margin-top: 8px;
       padding-left: 15px;
-      padding-right: 15px; }
+      padding-right: 30px;
+      font-size: 14px; }
   .exhibit-left .exhibit-text {
     width: 42.86%;
     float: left; }
   .exhibit-left .exhibit-img {
     width: 57.14%;
-    float: left; }
+    float: left;
+    overflow: hidden; }
+    .exhibit-left .exhibit-img img {
+      height: 100%;
+      width: auto;
+      position: absolute;
+      right: 15px; }
   .exhibit-right {
     margin-top: 0; }
     .exhibit-right .exhibit-img {
       position: absolute;
-      bottom: 0; }
+      bottom: 0;
+      padding-right: 15px; }
   .exhibit-left, .exhibit-right {
     height: 320px;
     overflow: hidden; }
@@ -1778,15 +1847,18 @@ Stylesheet: 992px and Up Stylesheet
   .update {
     background-image: url("../img/update.png");
     background-repeat: no-repeat;
-    font-family: 'Griffith Gothic';
-    font-weight: bold;
+    font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
     color: rgba(137, 197, 185, 0.42);
     height: 26px;
     padding-left: 35px; }
   .fines {
     padding-left: 25px;
     font-size: 60px;
-    font-family: 'Griffith Gothic Thin';
+    font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 100;
     letter-spacing: 2px; }
   .book-single .item-info h1, .book-search .item-info h1, .my-account .item-info h1 {
     font-size: 36px; }
@@ -1850,8 +1922,9 @@ Stylesheet: 992px and Up Stylesheet
     .sidebar h3 {
       width: 100%;
       color: #FFF;
-      font-family: 'Griffith Gothic Thin';
-      font-weight: normal;
+      font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 100;
       font-size: 30px;
       margin-top: 0;
       padding: 20px;
@@ -1912,8 +1985,9 @@ Stylesheet: 992px and Up Stylesheet
       background-image: url("../img/toggle-plus.png");
       background-repeat: no-repeat; }
     .filter .filter-h2 a {
-      font-family: 'Griffith Gothic';
-      font-weight: bold;
+      font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 500;
       font-size: 12px;
       padding-left: 20px; }
     .filter .filter-h2 > .uncollapsed {
@@ -1933,16 +2007,18 @@ Stylesheet: 992px and Up Stylesheet
     .cat-book h4, .cat-book p {
       margin: 0; }
     .cat-book h4 {
-      font-family: 'Griffith Gothic Black';
-      font-weight: normal; }
+      font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 900; }
   .cat-button {
     color: #FFF;
     background-color: #57585a;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 9px;
-    font-family: 'Griffith Gothic Black';
-    font-weight: normal;
+    font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
     padding: 5px;
     margin-top: 10px;
     margin-left: 20px;
@@ -1964,7 +2040,9 @@ Stylesheet: 992px and Up Stylesheet
       float: left;
       margin-right: 15px; }
     .shelf-item .shelf-title {
-      font-family: 'Griffith Gothic Black'; }
+      font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 900; }
     .shelf-item .item-location {
       padding: 5px;
       font-size: 10px; }
@@ -1982,10 +2060,12 @@ Stylesheet: 992px and Up Stylesheet
     footer .footer-nav {
       display: block; }
       footer .footer-nav .nav-h1 {
-        font-size: 12px;
+        font-size: 9px;
         text-transform: uppercase;
         color: #89c5b9;
-        font-family: 'Griffith Gothic Black';
+        font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 900;
         letter-spacing: 1.2px;
         box-sizing: border-box; }
         footer .footer-nav .nav-h1 span {
@@ -2000,7 +2080,9 @@ Stylesheet: 992px and Up Stylesheet
         line-height: 20px; }
         footer .footer-nav .nav-h3 a {
           color: #FFF;
-          font-family: 'Griffith Gothic Thin';
+          font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+          font-style: normal;
+          font-weight: 100;
           text-decoration: none;
           letter-spacing: 1px; } }
 
@@ -2115,4 +2197,29 @@ Stylesheet: 1200px and Up Stylesheet
   .col-lg-offset-1 {
     margin-left: 8.33333%; }
   .col-lg-offset-0 {
-    margin-left: 0%; } }
+    margin-left: 0%; }
+  nav.header-nav .nav-h1 + .nav-h1 {
+    margin-left: 5.466%; }
+  nav.header-nav .nav-h1b + .nav-h1 {
+    margin-left: 2.59%; }
+  .exhibit-text p {
+    padding-right: 15px;
+    font-size: 16px; }
+  .search-menu-desc {
+    display: block;
+    text-align: right;
+    margin-right: 15px;
+    float: right;
+    font-size: 12px;
+    height: 80px;
+    max-width: 124px;
+    visibility: hidden; }
+    .search-menu-desc span {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      display: block; }
+  footer .footer-nav .nav-h1 {
+    font-size: 12px; } }

@@ -164,10 +164,43 @@ Stylesheet: 1200px and Up Stylesheet
     margin-left: 0%;
   }
 
+nav.header-nav {
+
+.nav-h1 +.nav-h1{
+    margin-left: 5.466%;
+  }
+
+.nav-h1b +.nav-h1{
+  margin-left: 2.59%;
+}
+}
+
+.exhibit-text p {
+    padding-right: 15px;
+    font-size: 16px;
+
+  }
 
 
+.search-menu-desc {
+  display: block;
+  text-align: right;
+  margin-right: 15px;
+  float:right;
+  font-size: 12px;
+  height: 80px;
+  max-width: 124px;
+  visibility: hidden;
 
+  span{
+    @include vertical-align;
+  }
+}
 
+footer .footer-nav .nav-h1 {
+  font-size: 12px;
+
+}
 
 
 

@@ -167,7 +167,12 @@ Stylesheet: 768px and Up Stylesheet
 
 
 
-
+.max-widthB {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    @include clearfix;
+  }
 
 
 

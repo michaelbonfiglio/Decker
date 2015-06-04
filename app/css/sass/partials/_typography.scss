@@ -4,10 +4,36 @@ Basic styling of typography.
 
 */
 
-$thin: 'Griffith Gothic Thin';
-$light: 'Griffith Gothic Light';
-$bold: 'Griffith Gothic';
-$bolder: 'Griffith Gothic Black';
+@import url(http://fonts.googleapis.com/css?family=Roboto:900,500,100,300);
+
+$thin: 'Griffith Gothic Thin', 'Roboto', sans-serif;
+$light: 'Griffith Gothic Light', 'Roboto', sans-serif;
+$bold: 'Griffith Gothic', 'Roboto', sans-serif;
+$bolder: 'Griffith Gothic Black', 'Roboto', sans-serif;
+
+@mixin DeckThin {
+  font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+@mixin DeckLight {
+  font-family: 'Griffith Gothic Light', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@mixin DeckBold {
+  font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin DeckBlack {
+  font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+}
 
 
 

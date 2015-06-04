@@ -615,7 +615,8 @@ window.addEventListener('message', function (ev) {
 }, false);
 
 }());
-</script><style type="text/preview">/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+</script><style type="text/preview">@import url(http://fonts.googleapis.com/css?family=Roboto:900,500,100,300);
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -1011,7 +1012,9 @@ Basic styling of html tags.
 
 */
 body {
-  font-family: 'Griffith Gothic Light'; }
+  font-family: 'Griffith Gothic Light', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300; }
 
 /* ##Grid */
 td, th {
@@ -1257,9 +1260,9 @@ header:after {
 
 h1, .h1 {
   font-size: 30px;
-  font-family: 'Griffith Gothic Thin';
+  font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 100;
   letter-spacing: 1px;
   margin-top: 30;
   margin-bottom: 30; }
@@ -1269,8 +1272,9 @@ h2, .h2 {
 
 .h3 {
   font-size: 30px;
-  font-family: 'Griffith Gothic Black';
-  font-weight: normal;
+  font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
   margin: 0; }
 
 .decker {
@@ -1291,19 +1295,24 @@ h2, .h2 {
 
 .hours-open {
   text-transform: uppercase;
-  font-family: 'Griffith Gothic Black';
+  font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
   font-size: 10px;
   letter-spacing: .6px; }
 
 .hours-times {
-  font-family: 'Griffith Gothic Light';
+  font-family: 'Griffith Gothic Light', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 10px;
   letter-spacing: .3px; }
 
 .days {
   text-transform: uppercase;
-  font-family: 'Griffith Gothic';
-  font-weight: bold; }
+  font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500; }
 
 /* ##Navigation
 
@@ -1313,7 +1322,7 @@ h2, .h2 {
 #menu {
   display: none; }
 
-.login {
+.login-button {
   display: none; }
 
 nav ul {
@@ -1333,13 +1342,17 @@ nav.header-nav {
         padding-top: 16px;
         box-sizing: border-box; }
         nav.header-nav ul li.nav-h1 a {
-          font-family: 'Griffith Gothic Black';
+          font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+          font-style: normal;
+          font-weight: 900;
           color: #fff;
           letter-spacing: 1.2px;
           font-size: 16px;
           height: 100%; }
       nav.header-nav ul li.nav-h3 a {
-        font-family: 'Griffith Gothic Light';
+        font-family: 'Griffith Gothic Light', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 300;
         color: #000;
         font-size: 14px;
         line-height: 20px; }
@@ -1376,12 +1389,10 @@ nav.header-nav {
   .home-search:after {
     clear: both; }
 
-#home-search-menu {
-  padding-right: 0; }
-  #home-search-menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 0; }
+#home-search-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0; }
 
 .search-menu-desc {
   display: none; }
@@ -1399,7 +1410,9 @@ nav.header-nav {
   color: #FFF;
   text-transform: uppercase;
   font-size: 10px;
-  font-family: 'Griffith Gothic Thin';
+  font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 100;
   letter-spacing: 1px;
   opacity: .42;
   text-align: center;
@@ -1409,10 +1422,26 @@ nav.header-nav {
   .search-menu-item:hover {
     opacity: 1; }
 
+#search-menu-0 .search-menu-item {
+  width: 17%; }
+
+#search-menu-1 .search-menu-item {
+  width: 35%; }
+
+#search-menu-2 .search-menu-item {
+  width: 13%; }
+
+#search-menu-3 .search-menu-item {
+  width: 19%; }
+
+#search-menu-4 .search-menu-item {
+  width: 16%; }
+
 .menu-active {
   opacity: 1;
-  font-family: 'Griffith Gothic';
-  font-weight: bold; }
+  font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500; }
 
 .home-search-bar {
   margin-top: 40px; }
@@ -1431,7 +1460,9 @@ nav.header-nav {
   border: 1px solid #000;
   margin: 0;
   padding: 0;
-  font-family: 'Griffith Gothic';
+  font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: 14px;
   float: left;
   letter-spacing: 1px; }
@@ -1448,21 +1479,25 @@ nav.header-nav {
   padding-right: 15px; }
   .exhibit-text h3 {
     font-size: 40px;
-    font-family: 'Griffith Gothic Thin';
-    font-weight: normal;
+    font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 100;
     margin-top: 0;
     margin-bottom: 30px;
     padding-top: 15px; }
   .exhibit-text h4 {
     font-size: 16px;
-    font-family: 'Griffith Gothic Black';
-    font-weight: normal;
+    font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 0; }
   .exhibit-text p {
     letter-spacing: .3px;
-    font-family: 'Griffith Gothic Thin';
+    font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 100;
     margin-top: 8px;
     padding-right: 15px; }
 
@@ -1488,8 +1523,9 @@ nav.header-nav {
     padding-left: 20px;
     padding-right: 15px;
     font-size: 16px;
-    font-family: 'Griffith Gothic Black';
-    font-weight: normal;
+    font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 0;
@@ -1498,7 +1534,9 @@ nav.header-nav {
     color: #FFF;
     padding-left: 20px;
     letter-spacing: .3px;
-    font-family: 'Griffith Gothic Thin';
+    font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 100;
     margin-top: 8px;
     padding-right: 15px; }
 
@@ -1514,6 +1552,23 @@ nav.header-nav {
   border-top: 10px solid #89c5b9; }
 .exhibit .left, .exhibit .right, .exhibit .full {
   width: 100%; }
+
+@media (min-width: 600px) {
+  .exhibit-left, .exhibit-right {
+    height: 320px;
+    overflow: hidden; }
+  .exhibit-left .exhibit-text {
+    width: 42.86%;
+    float: left; }
+  .exhibit-left .exhibit-img {
+    width: 57.14%;
+    float: left;
+    overflow: hidden; }
+    .exhibit-left .exhibit-img img {
+      height: 100%;
+      width: auto;
+      position: absolute;
+      right: 15px; } }
 
 /* # Media Object
 
@@ -1554,13 +1609,16 @@ section.row {
   margin-bottom: 20px; }
   .book-single .item-info h1, .book-single .item-info .h1, .book-search .item-info h1, .book-search .item-info .h1, .my-account .item-info h1, .my-account .item-info .h1 {
     font-size: 30px;
-    font-family: 'Griffith Gothic Black';
+    font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
     margin: 0; }
   .book-single .item-info h2, .book-search .item-info h2, .my-account .item-info h2 {
     font-size: 18px;
     line-height: 30px;
-    font-family: 'Griffith Gothic Light';
-    font-weight: normal;
+    font-family: 'Griffith Gothic Light', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
     margin: 0; }
   .book-single .item-info table, .book-search .item-info table, .my-account .item-info table {
     text-align: left;
@@ -1568,8 +1626,9 @@ section.row {
     padding-top: 10px; }
     .book-single .item-info table th, .book-search .item-info table th, .my-account .item-info table th {
       width: 50%;
-      font-family: 'Griffith Gothic Black';
-      font-weight: normal;
+      font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 900;
       padding-left: 10px; }
     .book-single .item-info table td, .book-search .item-info table td, .my-account .item-info table td {
       padding-left: 10px; }
@@ -1586,8 +1645,9 @@ section.row {
   background-image: url("..//Users/michaelbonfiglio/Desktop/class-05/app/css/sass/partials/../img/minus.png");
   background-repeat: no-repeat;
   background-position: 6px 0;
-  font-family: 'Griffith Gothic';
-  font-weight: bold;
+  font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
   color: rgba(137, 197, 185, 0.42);
   height: 30px;
   padding-left: 35px;
@@ -1622,11 +1682,12 @@ section.row {
 .my-account .book-item + .book-item {
   border-top: 1px solid rgba(137, 197, 185, 0.42); }
 .my-account .account-sect {
-  background-color: rgba(137, 197, 185, 0.42);
+  background-color: #000;
   color: #FFF;
-  font-family: 'Griffith Gothic Black';
-  font-weight: normal;
-  font-size: 16px;
+  font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 5px; }
@@ -1720,15 +1781,17 @@ section.row {
 
 .text-page h2 {
   font-size: 30px;
-  font-family: 'Griffith Gothic Black';
-  font-weight: normal;
+  font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
   width: 100%;
   padding-bottom: 4px;
   border-bottom: 1px solid rgba(137, 197, 185, 0.42); }
 .text-page h3 {
   text-transform: uppercase;
-  font-family: 'Griffith Gothic Black';
-  font-weight: normal;
+  font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
   font-size: 14px;
   margin-bottom: 0;
   margin-top: 20px;
@@ -1823,7 +1886,6 @@ tbody.collapse.in {
   display: block;
   padding: 3px 20px;
   clear: both;
-  font-weight: normal;
   line-height: 1.42857143;
   color: #333333;
   white-space: nowrap; }
@@ -2004,7 +2066,16 @@ Stylesheet: 768px and Up Stylesheet
   .col-sm-offset-1 {
     margin-left: 8.33333%; }
   .col-sm-offset-0 {
-    margin-left: 0%; } }
+    margin-left: 0%; }
+  .max-widthB {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto; }
+    .max-widthB:before, .max-widthB:after {
+      content: " ";
+      display: table; }
+    .max-widthB:after {
+      clear: both; } }
 
 /* Medium devices (desktops, 992px and up) Styles in _992up.scss */
 @media (min-width: 992px) {
@@ -2118,14 +2189,14 @@ Stylesheet: 992px and Up Stylesheet
     margin-left: 8.33333%; }
   .col-md-offset-0 {
     margin-left: 0%; }
-  .max-width {
+  .max-width, .max-widthB {
     max-width: 1200px;
     margin-right: auto;
     margin-left: auto; }
-    .max-width:before, .max-width:after {
+    .max-width:before, .max-width:after, .max-widthB:before, .max-widthB:after {
       content: " ";
       display: table; }
-    .max-width:after {
+    .max-width:after, .max-widthB:after {
       clear: both; }
   /* ##Headers
 
@@ -2157,29 +2228,22 @@ Stylesheet: 992px and Up Stylesheet
     display: none; }
   #menu {
     display: block; }
-  .login {
-    display: block;
-    float: left; }
   .login-button {
     background-color: #89c5b9;
     color: #FFF;
     width: 90px;
     height: 35px;
     letter-spacing: 1.4px;
-    font-family: 'Griffith Gothic';
-    font-weight: bold;
+    font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
     font-size: 17px;
     text-transform: uppercase;
     text-align: center;
     padding-top: 8px;
-    position: absolute;
-    right: 0;
-    text-decoration: none; }
-    .login-button:before, .login-button:after {
-      content: " ";
-      display: table; }
-    .login-button:after {
-      clear: both; }
+    text-decoration: none;
+    float: right;
+    display: block; }
   nav ul {
     margin-top: 0;
     padding: 0; }
@@ -2205,7 +2269,9 @@ Stylesheet: 992px and Up Stylesheet
           padding-right: 15px;
           float: left; }
           nav.header-nav ul li.nav-h1 a {
-            font-family: 'Griffith Gothic Black';
+            font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 900;
             color: #fff;
             letter-spacing: 1.2px;
             font-size: 16px;
@@ -2213,7 +2279,9 @@ Stylesheet: 992px and Up Stylesheet
         nav.header-nav ul li.nav-h1b {
           width: 170px; }
         nav.header-nav ul li.nav-h3 a {
-          font-family: 'Griffith Gothic Light';
+          font-family: 'Griffith Gothic Light', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+          font-style: normal;
+          font-weight: 300;
           color: #000;
           font-size: 14px;
           line-height: 20px; }
@@ -2227,9 +2295,9 @@ Stylesheet: 992px and Up Stylesheet
       nav.header-nav .nav-h1:hover a {
         color: #000; }
     nav.header-nav .nav-h1 + .nav-h1 {
-      margin-left: 6.466%; }
+      margin-left: 2.466%; }
     nav.header-nav .nav-h1b + .nav-h1 {
-      margin-left: 2.59%; }
+      margin-left: 0; }
     nav.header-nav .nav-h2 {
       font-size: 14px;
       text-transform: uppercase;
@@ -2260,25 +2328,9 @@ Stylesheet: 992px and Up Stylesheet
       list-style-type: none;
       padding: 0;
       margin-top: 0; }
-  .search-menu-desc {
-    display: block;
-    text-align: right;
-    margin-right: 15px;
-    float: right;
-    font-size: 12px;
-    height: 80px;
-    max-width: 124px;
-    visibility: hidden; }
-    .search-menu-desc span {
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      display: block; }
-  .desc-active {
-    visibility: visible; }
-  .search-menu-item {
+    #home-search-menu .desc-active {
+      visibility: visible; }
+  #search-menu-0 .search-menu-item, #search-menu-1 .search-menu-item, #search-menu-2 .search-menu-item, #search-menu-3 .search-menu-item, #search-menu-4 .search-menu-item {
     width: 146px;
     float: right;
     display: block;
@@ -2289,26 +2341,29 @@ Stylesheet: 992px and Up Stylesheet
     color: #FFF;
     text-transform: uppercase;
     font-size: 16px;
-    font-family: 'Griffith Gothic Thin';
+    font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 100;
     letter-spacing: 1px;
     opacity: .42;
     text-align: center;
     box-sizing: border-box;
     -webkit-transition: opacity 1s ease-in-out;
             transition: opacity 1s ease-in-out; }
-    .search-menu-item:hover {
+    #search-menu-0 .search-menu-item:hover, #search-menu-1 .search-menu-item:hover, #search-menu-2 .search-menu-item:hover, #search-menu-3 .search-menu-item:hover, #search-menu-4 .search-menu-item:hover {
       opacity: 1; }
-    .search-menu-item span {
+    #search-menu-0 .search-menu-item span, #search-menu-1 .search-menu-item span, #search-menu-2 .search-menu-item span, #search-menu-3 .search-menu-item span, #search-menu-4 .search-menu-item span {
       position: relative;
       top: 50%;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       display: block; }
-  .menu-active {
+  #search-menu-0 .menu-active, #search-menu-1 .menu-active, #search-menu-2 .menu-active, #search-menu-3 .menu-active, #search-menu-4 .menu-active {
     opacity: 1;
-    font-family: 'Griffith Gothic';
-    font-weight: bold; }
+    font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500; }
   .home-search-bar {
     float: left;
     margin-top: 160px; }
@@ -2318,7 +2373,9 @@ Stylesheet: 992px and Up Stylesheet
     box-sizing: border-box; }
   .home-search-button {
     height: 80px;
-    font-family: 'Griffith Gothic';
+    font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
     font-size: 20px; }
   .exhibit {
     margin-bottom: 60px; }
@@ -2328,34 +2385,46 @@ Stylesheet: 992px and Up Stylesheet
     padding-right: 15px; }
     .exhibit-text h3 {
       font-size: 40px;
-      font-family: 'Griffith Gothic Thin';
-      font-weight: normal;
+      font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 100;
       padding-left: 15px; }
     .exhibit-text h4 {
       font-size: 16px;
-      font-family: 'Griffith Gothic Black';
-      font-weight: normal;
+      font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 900;
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 0;
       padding-left: 15px; }
     .exhibit-text p {
       letter-spacing: .3px;
-      font-family: 'Griffith Gothic Thin';
+      font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 100;
       margin-top: 8px;
       padding-left: 15px;
-      padding-right: 15px; }
+      padding-right: 30px;
+      font-size: 14px; }
   .exhibit-left .exhibit-text {
     width: 42.86%;
     float: left; }
   .exhibit-left .exhibit-img {
     width: 57.14%;
-    float: left; }
+    float: left;
+    overflow: hidden; }
+    .exhibit-left .exhibit-img img {
+      height: 100%;
+      width: auto;
+      position: absolute;
+      right: 15px; }
   .exhibit-right {
     margin-top: 0; }
     .exhibit-right .exhibit-img {
       position: absolute;
-      bottom: 0; }
+      bottom: 0;
+      padding-right: 15px; }
   .exhibit-left, .exhibit-right {
     height: 320px;
     overflow: hidden; }
@@ -2395,15 +2464,18 @@ Stylesheet: 992px and Up Stylesheet
   .update {
     background-image: url("..//Users/michaelbonfiglio/Desktop/class-05/app/css/sass/partials/../img/update.png");
     background-repeat: no-repeat;
-    font-family: 'Griffith Gothic';
-    font-weight: bold;
+    font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
     color: rgba(137, 197, 185, 0.42);
     height: 26px;
     padding-left: 35px; }
   .fines {
     padding-left: 25px;
     font-size: 60px;
-    font-family: 'Griffith Gothic Thin';
+    font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 100;
     letter-spacing: 2px; }
   .book-single .item-info h1, .book-search .item-info h1, .my-account .item-info h1 {
     font-size: 36px; }
@@ -2467,8 +2539,9 @@ Stylesheet: 992px and Up Stylesheet
     .sidebar h3 {
       width: 100%;
       color: #FFF;
-      font-family: 'Griffith Gothic Thin';
-      font-weight: normal;
+      font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 100;
       font-size: 30px;
       margin-top: 0;
       padding: 20px;
@@ -2529,8 +2602,9 @@ Stylesheet: 992px and Up Stylesheet
       background-image: url("..//Users/michaelbonfiglio/Desktop/class-05/app/css/sass/partials/../img/toggle-plus.png");
       background-repeat: no-repeat; }
     .filter .filter-h2 a {
-      font-family: 'Griffith Gothic';
-      font-weight: bold;
+      font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 500;
       font-size: 12px;
       padding-left: 20px; }
     .filter .filter-h2 > .uncollapsed {
@@ -2550,16 +2624,18 @@ Stylesheet: 992px and Up Stylesheet
     .cat-book h4, .cat-book p {
       margin: 0; }
     .cat-book h4 {
-      font-family: 'Griffith Gothic Black';
-      font-weight: normal; }
+      font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 900; }
   .cat-button {
     color: #FFF;
     background-color: #57585a;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 9px;
-    font-family: 'Griffith Gothic Black';
-    font-weight: normal;
+    font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
     padding: 5px;
     margin-top: 10px;
     margin-left: 20px;
@@ -2581,7 +2657,9 @@ Stylesheet: 992px and Up Stylesheet
       float: left;
       margin-right: 15px; }
     .shelf-item .shelf-title {
-      font-family: 'Griffith Gothic Black'; }
+      font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 900; }
     .shelf-item .item-location {
       padding: 5px;
       font-size: 10px; }
@@ -2599,10 +2677,12 @@ Stylesheet: 992px and Up Stylesheet
     footer .footer-nav {
       display: block; }
       footer .footer-nav .nav-h1 {
-        font-size: 12px;
+        font-size: 9px;
         text-transform: uppercase;
         color: #89c5b9;
-        font-family: 'Griffith Gothic Black';
+        font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 900;
         letter-spacing: 1.2px;
         box-sizing: border-box; }
         footer .footer-nav .nav-h1 span {
@@ -2617,7 +2697,9 @@ Stylesheet: 992px and Up Stylesheet
         line-height: 20px; }
         footer .footer-nav .nav-h3 a {
           color: #FFF;
-          font-family: 'Griffith Gothic Thin';
+          font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+          font-style: normal;
+          font-weight: 100;
           text-decoration: none;
           letter-spacing: 1px; } }
 
@@ -2732,7 +2814,32 @@ Stylesheet: 1200px and Up Stylesheet
   .col-lg-offset-1 {
     margin-left: 8.33333%; }
   .col-lg-offset-0 {
-    margin-left: 0%; } }
+    margin-left: 0%; }
+  nav.header-nav .nav-h1 + .nav-h1 {
+    margin-left: 5.466%; }
+  nav.header-nav .nav-h1b + .nav-h1 {
+    margin-left: 2.59%; }
+  .exhibit-text p {
+    padding-right: 15px;
+    font-size: 16px; }
+  .search-menu-desc {
+    display: block;
+    text-align: right;
+    margin-right: 15px;
+    float: right;
+    font-size: 12px;
+    height: 80px;
+    max-width: 124px;
+    visibility: hidden; }
+    .search-menu-desc span {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      display: block; }
+  footer .footer-nav .nav-h1 {
+    font-size: 12px; } }
 /*
     Mobile Menu Core Style
 */
@@ -2846,13 +2953,13 @@ Stylesheet: 1200px and Up Stylesheet
 	line-height:30px;
 	padding:7px 12px;
 	height:44px;
-}</style></head><body><nav class="bar top cf"><div class="container"><a href="index.html" class="brand">Decker Library</a><ul class="menu"><li><a href="#" data-toggle="dropdown-1" unselectable="on" class="dropdown-toggle">css</a><ul id="dropdown-1" hidden class="dropdown"><li><a href="main.html">main</a></li><li><a href="slicknav.html">slicknav</a></li></ul></li><li><a href="#" data-toggle="dropdown-2" unselectable="on" class="dropdown-toggle">breakpoints</a><ul id="dropdown-2" hidden class="dropdown"><li><a href="sass-breakpoints-1200up.html">1200up</a></li><li><a href="sass-breakpoints-768up.html">768up</a></li><li><a href="sass-breakpoints-992up.html">992up</a></li><li><a href="sass-breakpoints-base.html">base</a></li></ul></li><li><a href="#" data-toggle="dropdown-3" unselectable="on" class="dropdown-toggle">sass</a><ul id="dropdown-3" hidden class="dropdown"><li><a href="sass-main.html">main</a></li><li><a href="sass-normalize.html">normalize</a></li><li><a href="sass-typography.html">typography</a></li></ul></li><li><a href="#" data-toggle="dropdown-4" unselectable="on" class="dropdown-toggle">partials</a><ul id="dropdown-4" hidden class="dropdown"><li><a href="sass-partials-mixins.html">mixins</a></li><li><a href="sass-partials-typography.html">typography</a></li><li><a href="sass-partials-variables.html">variables</a></li></ul></li></ul><div class="nav"><button title="Table of Contents" data-toggle="nav-toc"><svg viewBox="0 0 512 512" height="22" width="22" class="icon"><path d="M108.9,403.1V462H50v-58.9H108.9z M108.9,285.4H50v58.9h58.9V285.4zM108.9,50H50v58.9h58.9V50z M108.9,167.7H50v58.9h58.9V167.7z M167.7,344.3H462v-58.9H167.7V344.3zM167.7,50v58.9H462V50H167.7z M167.7,462H462v-58.9H167.7V462z M167.7,226.6H462v-58.9H167.7V226.6z"></path></svg></button><input type="search" placeholder="Search" class="search"></div></div></nav><section class="container"><article id="" class="section"><div class="docs"><a href="#" class="permalink"><svg viewBox="0 0 512 512" height="32" width="32" class="icon"><path d="M156.2,199.7c7.5-7.5,15.9-13.8,24.8-18.7c49.6-27.3,113.1-12.8,145,35.5l-38.5,38.5c-11.1-25.2-38.5-39.6-65.8-33.5c-10.3,2.3-20.1,7.4-28,15.4l-73.9,73.9c-22.4,22.4-22.4,58.9,0,81.4c22.4,22.4,58.9,22.4,81.4,0l22.8-22.8c20.7,8.2,42.9,11.5,64.9,9.9l-50.3,50.3c-43.1,43.1-113,43.1-156.1,0c-43.1-43.1-43.1-113-0-156.1L156.2,199.7z M273.6,82.3l-50.3,50.3c21.9-1.6,44.2,1.6,64.9,9.9l22.8-22.8c22.4-22.4,58.9-22.4,81.4,0c22.4,22.4,22.4,58.9,0,81.4l-73.9,73.9c-22.5,22.5-59.1,22.3-81.4,0c-5.2-5.2-9.7-11.7-12.5-18l-38.5,38.5c4,6.1,8.3,11.5,13.7,16.9c13.9,13.9,31.7,24.3,52.1,29.3c26.5,6.4,54.8,2.8,79.2-10.6c8.9-4.9,17.3-11.1,24.8-18.7l73.9-73.9c43.1-43.1,43.1-113,0-156.1C386.6,39.2,316.7,39.2,273.6,82.3z"></path></svg></a>
+}</style></head><body><nav class="bar top cf"><div class="container"><a href="index.html" class="brand">Decker Library</a><ul class="menu"><li><a href="#" data-toggle="dropdown-1" unselectable="on" class="dropdown-toggle">css</a><ul id="dropdown-1" hidden class="dropdown"><li><a href="main.html">main</a></li><li><a href="slicknav.html">slicknav</a></li></ul></li><li><a href="#" data-toggle="dropdown-2" unselectable="on" class="dropdown-toggle">breakpoints</a><ul id="dropdown-2" hidden class="dropdown"><li><a href="sass-breakpoints-1200up.html">1200up</a></li><li><a href="sass-breakpoints-768up.html">768up</a></li><li><a href="sass-breakpoints-992up.html">992up</a></li><li><a href="sass-breakpoints-base.html">base</a></li></ul></li><li><a href="#" data-toggle="dropdown-3" unselectable="on" class="dropdown-toggle">sass</a><ul id="dropdown-3" hidden class="dropdown"><li><a href="sass-main.html">main</a></li><li><a href="sass-normalize.html">normalize</a></li></ul></li><li><a href="#" data-toggle="dropdown-4" unselectable="on" class="dropdown-toggle">partials</a><ul id="dropdown-4" hidden class="dropdown"><li><a href="sass-partials-mixins.html">mixins</a></li><li><a href="sass-partials-typography.html">typography</a></li><li><a href="sass-partials-variables.html">variables</a></li></ul></li></ul><div class="nav"><button title="Table of Contents" data-toggle="nav-toc"><svg viewBox="0 0 512 512" height="22" width="22" class="icon"><path d="M108.9,403.1V462H50v-58.9H108.9z M108.9,285.4H50v58.9h58.9V285.4zM108.9,50H50v58.9h58.9V50z M108.9,167.7H50v58.9h58.9V167.7z M167.7,344.3H462v-58.9H167.7V344.3zM167.7,50v58.9H462V50H167.7z M167.7,462H462v-58.9H167.7V462z M167.7,226.6H462v-58.9H167.7V226.6z"></path></svg></button><input type="search" placeholder="Search" class="search"></div></div></nav><section class="container"><article id="" class="section"><div class="docs"><a href="#" class="permalink"><svg viewBox="0 0 512 512" height="32" width="32" class="icon"><path d="M156.2,199.7c7.5-7.5,15.9-13.8,24.8-18.7c49.6-27.3,113.1-12.8,145,35.5l-38.5,38.5c-11.1-25.2-38.5-39.6-65.8-33.5c-10.3,2.3-20.1,7.4-28,15.4l-73.9,73.9c-22.4,22.4-22.4,58.9,0,81.4c22.4,22.4,58.9,22.4,81.4,0l22.8-22.8c20.7,8.2,42.9,11.5,64.9,9.9l-50.3,50.3c-43.1,43.1-113,43.1-156.1,0c-43.1-43.1-43.1-113-0-156.1L156.2,199.7z M273.6,82.3l-50.3,50.3c21.9-1.6,44.2,1.6,64.9,9.9l22.8-22.8c22.4-22.4,58.9-22.4,81.4,0c22.4,22.4,22.4,58.9,0,81.4l-73.9,73.9c-22.5,22.5-59.1,22.3-81.4,0c-5.2-5.2-9.7-11.7-12.5-18l-38.5,38.5c4,6.1,8.3,11.5,13.7,16.9c13.9,13.9,31.7,24.3,52.1,29.3c26.5,6.4,54.8,2.8,79.2-10.6c8.9-4.9,17.3-11.1,24.8-18.7l73.9-73.9c43.1-43.1,43.1-113,0-156.1C386.6,39.2,316.7,39.2,273.6,82.3z"></path></svg></a>
 </div><div class="code"><pre><code>$mica-green: #89c5b9;
 $black: #000;
 $white: #FFF;
 $mica-grey: #57585a;
 $mica-grey-lite: #d2d2d2;
-$mica-green-lite: rgba(137, 197, 185, .42);</code></pre></div></article></section><div class="bar bottom"><div hidden class="settings container"><!-- Icons from http://iconmonstr.com--><button title="Desktop (1280)" data-width='1280'><svg viewBox="0 0 412 386" height="24" width="26" class="icon"><path d="m147.6,343.9c-4.5,15.9-26.2,37.6-42.1,42.1h201c-15.3,-4-38.1,-26.8-42.1,-42.1H147.6zM387,0.5H25c-13.8,0-25,11.2-25,25V294c0,13.8 11.2,25 25,25h362c13.8,0 25,-11.2 25,-25V25.5C412,11.7 400.8,0.5 387,0.5zM369.9,238.2H42.1L42.1,42.6 369.9,42.6V238.2z"></path></svg></button><button title="Laptop (1024)" data-width='1024'><svg viewBox="0 0 384 312" height="23" width="28" class="icon"><path d="m349.2,20.5c0,-11-9,-20-20,-20H53.6c-11,0-20,9-20,20v194H349.2v-194zm-27,167H60.6V27.5H322.2v160zm28,42H32.6L2.6,282.1c-3.5,6.2-3.5,13.8 0.1,19.9 3.6,6.2 10.2,9.9 17.3,9.9H363.1c7.1,0 13.7,-3.8 17.3,-10 3.6,-6.2 3.6,-13.8 0,-20l-30.2,-52.5zm-196.9,54 8,-23.5h60.5l8,23.5h-76.5z"></path></svg></button><button title="Tablet (768)" data-width='768'><svg viewBox="0 0 317 412" height="24" width="18" class="icon"><path d="M 316.5,380 V 32 c 0,-17.7 -14.3,-32 -32,-32 H 32 C 14.3,0 0,14.3 0,32 v 348 c 0,17.7 14.3,32 32,32 h 252.5 c 17.7,0 32,-14.3 32,-32 z M 40,367 V 45 H 276.5 V 367 H 40 z m 109.8,22.7 c 0,-4.7 3.8,-8.5 8.5,-8.5 4.7,0 8.5,3.8 8.5,8.5 0,4.7 -3.8,8.5 -8.5,8.5 -4.7,0 -8.5,-3.8 -8.5,-8.5 z"></path></svg></button><button title="Smart phone (320)" data-width='320'><svg viewBox="0 0 224 412" height="24" width="13" class="icon"><path d="M 190.7,0 H 33 C 14.8,0 0,14.8 0,33 v 346 c 0,18.2 14.8,33 33,33 h 157.7 c 18.2,0 33,-14.8 33,-33 V 33 c 0,-18.2 -14.8,-33 -33,-33 z M 94.3,30.2 h 37 c 2.2,0 4,1.8 4,4 0,2.2 -1.8,4 -4,4 h -37 c -2.2,0 -4,-1.8 -4,-4 0,-2.2 1.8,-4 4,-4 z m 18.5,362.8 c -8.8,0 -16,-7.2 -16,-16 0,-8.8 7.2,-16 16,-16 8.8,0 16,7.2 16,16 0,8.8 -7.2,16 -16,16 z M 198.6,343.8 H 25.1 V 68.2 h 173.5 v 275.5 z"></path></svg></button><button title="Feature phone (240)" data-width='240'><svg viewBox="0 0 201 412" height="24" width="12" class="icon"><path d="M 165.5,0.2 V 45 H 25 c -13.8,0 -25,11.2 -25,25 V 387 c 0,13.8 11.2,25 25,25 h 150.5 c 13.8,0 25,-11.2 25,-25 V 0.2 h -35 z M 65.2,366.5 H 34.2 v -24.5 h 31 v 24.5 z m 0,-44.3 H 34.2 v -24.5 h 31 v 24.5 z m 50.5,44.3 H 84.7 v -24.5 h 31 v 24.5 z m 0,-44.3 H 84.7 v -24.5 h 31 v 24.5 z m 50.5,44.3 h -31 v -24.5 h 31 v 24.5 z m 0,-44.3 h -31 v -24.5 h 31 v 24.5 z m 0,-59.3 h -132 V 95.4 h 132 V 262.9 z"></path></svg></button><button title="Auto (100%)" data-width="auto" class="auto is-active">Auto</button></div></div><script>(function(){var searchIndex=[{"title":"main","filename":"main","url":"main.html"},{"title":"","filename":"main","url":"main.html#"},{"title":"HTML5 display definitions","filename":"main","url":"main.html#html5-display-definitions"},{"title":"Links","filename":"main","url":"main.html#links"},{"title":"Text-level semantics","filename":"main","url":"main.html#textlevel-semantics"},{"title":"Embedded content","filename":"main","url":"main.html#embedded-content"},{"title":"Grouping content","filename":"main","url":"main.html#grouping-content"},{"title":"Forms","filename":"main","url":"main.html#forms"},{"title":"Tables","filename":"main","url":"main.html#tables"},{"title":"Typography","filename":"main","url":"main.html#typography"},{"title":"Elements","filename":"main","url":"main.html#elements"},{"title":"Home Page","filename":"main","url":"main.html#home-page"},{"title":"Media Object","filename":"main","url":"main.html#media-object"},{"title":"Other Pages","filename":"main","url":"main.html#other-pages"},{"title":"Footer","filename":"main","url":"main.html#footer"},{"title":"1200up","filename":"sass/breakpoints/1200up","url":"sass-breakpoints-1200up.html"},{"title":"","filename":"sass/breakpoints/1200up","url":"sass-breakpoints-1200up.html#"},{"title":"768up","filename":"sass/breakpoints/768up","url":"sass-breakpoints-768up.html"},{"title":"","filename":"sass/breakpoints/768up","url":"sass-breakpoints-768up.html#"},{"title":"992up","filename":"sass/breakpoints/992up","url":"sass-breakpoints-992up.html"},{"title":"","filename":"sass/breakpoints/992up","url":"sass-breakpoints-992up.html#"},{"title":"Home Page","filename":"sass/breakpoints/992up","url":"sass-breakpoints-992up.html#home-page"},{"title":"Other Pages","filename":"sass/breakpoints/992up","url":"sass-breakpoints-992up.html#other-pages"},{"title":"base","filename":"sass/breakpoints/base","url":"sass-breakpoints-base.html"},{"title":"","filename":"sass/breakpoints/base","url":"sass-breakpoints-base.html#"},{"title":"Elements","filename":"sass/breakpoints/base","url":"sass-breakpoints-base.html#elements"},{"title":"Home Page","filename":"sass/breakpoints/base","url":"sass-breakpoints-base.html#home-page"},{"title":"Media Object","filename":"sass/breakpoints/base","url":"sass-breakpoints-base.html#media-object"},{"title":"Other Pages","filename":"sass/breakpoints/base","url":"sass-breakpoints-base.html#other-pages"},{"title":"Footer","filename":"sass/breakpoints/base","url":"sass-breakpoints-base.html#footer"},{"title":"main","filename":"sass/main","url":"sass-main.html"},{"title":"","filename":"sass/main","url":"sass-main.html#"},{"title":"normalize","filename":"sass/normalize","url":"sass-normalize.html"},{"title":"","filename":"sass/normalize","url":"sass-normalize.html#"},{"title":"HTML5 display definitions","filename":"sass/normalize","url":"sass-normalize.html#html5-display-definitions"},{"title":"Links","filename":"sass/normalize","url":"sass-normalize.html#links"},{"title":"Text-level semantics","filename":"sass/normalize","url":"sass-normalize.html#textlevel-semantics"},{"title":"Embedded content","filename":"sass/normalize","url":"sass-normalize.html#embedded-content"},{"title":"Grouping content","filename":"sass/normalize","url":"sass-normalize.html#grouping-content"},{"title":"Forms","filename":"sass/normalize","url":"sass-normalize.html#forms"},{"title":"Tables","filename":"sass/normalize","url":"sass-normalize.html#tables"},{"title":"mixins","filename":"sass/partials/mixins","url":"sass-partials-mixins.html"},{"title":"","filename":"sass/partials/mixins","url":"sass-partials-mixins.html#"},{"title":"typography","filename":"sass/partials/typography","url":"sass-partials-typography.html"},{"title":"Typography","filename":"sass/partials/typography","url":"sass-partials-typography.html#typography"},{"title":"variables","filename":"sass/partials/variables","url":"sass-partials-variables.html"},{"title":"","filename":"sass/partials/variables","url":"sass-partials-variables.html#"},{"title":"typography","filename":"sass/typography","url":"sass-typography.html"},{"title":"Typography","filename":"sass/typography","url":"sass-typography.html#typography"},{"title":"slicknav","filename":"slicknav","url":"slicknav.html"},{"title":"","filename":"slicknav","url":"slicknav.html#"}];// StyleDocco documentation user interface elements
+$mica-green-lite: rgba(137, 197, 185, .42);</code></pre></div></article></section><div class="bar bottom"><div hidden class="settings container"><!-- Icons from http://iconmonstr.com--><button title="Desktop (1280)" data-width='1280'><svg viewBox="0 0 412 386" height="24" width="26" class="icon"><path d="m147.6,343.9c-4.5,15.9-26.2,37.6-42.1,42.1h201c-15.3,-4-38.1,-26.8-42.1,-42.1H147.6zM387,0.5H25c-13.8,0-25,11.2-25,25V294c0,13.8 11.2,25 25,25h362c13.8,0 25,-11.2 25,-25V25.5C412,11.7 400.8,0.5 387,0.5zM369.9,238.2H42.1L42.1,42.6 369.9,42.6V238.2z"></path></svg></button><button title="Laptop (1024)" data-width='1024'><svg viewBox="0 0 384 312" height="23" width="28" class="icon"><path d="m349.2,20.5c0,-11-9,-20-20,-20H53.6c-11,0-20,9-20,20v194H349.2v-194zm-27,167H60.6V27.5H322.2v160zm28,42H32.6L2.6,282.1c-3.5,6.2-3.5,13.8 0.1,19.9 3.6,6.2 10.2,9.9 17.3,9.9H363.1c7.1,0 13.7,-3.8 17.3,-10 3.6,-6.2 3.6,-13.8 0,-20l-30.2,-52.5zm-196.9,54 8,-23.5h60.5l8,23.5h-76.5z"></path></svg></button><button title="Tablet (768)" data-width='768'><svg viewBox="0 0 317 412" height="24" width="18" class="icon"><path d="M 316.5,380 V 32 c 0,-17.7 -14.3,-32 -32,-32 H 32 C 14.3,0 0,14.3 0,32 v 348 c 0,17.7 14.3,32 32,32 h 252.5 c 17.7,0 32,-14.3 32,-32 z M 40,367 V 45 H 276.5 V 367 H 40 z m 109.8,22.7 c 0,-4.7 3.8,-8.5 8.5,-8.5 4.7,0 8.5,3.8 8.5,8.5 0,4.7 -3.8,8.5 -8.5,8.5 -4.7,0 -8.5,-3.8 -8.5,-8.5 z"></path></svg></button><button title="Smart phone (320)" data-width='320'><svg viewBox="0 0 224 412" height="24" width="13" class="icon"><path d="M 190.7,0 H 33 C 14.8,0 0,14.8 0,33 v 346 c 0,18.2 14.8,33 33,33 h 157.7 c 18.2,0 33,-14.8 33,-33 V 33 c 0,-18.2 -14.8,-33 -33,-33 z M 94.3,30.2 h 37 c 2.2,0 4,1.8 4,4 0,2.2 -1.8,4 -4,4 h -37 c -2.2,0 -4,-1.8 -4,-4 0,-2.2 1.8,-4 4,-4 z m 18.5,362.8 c -8.8,0 -16,-7.2 -16,-16 0,-8.8 7.2,-16 16,-16 8.8,0 16,7.2 16,16 0,8.8 -7.2,16 -16,16 z M 198.6,343.8 H 25.1 V 68.2 h 173.5 v 275.5 z"></path></svg></button><button title="Feature phone (240)" data-width='240'><svg viewBox="0 0 201 412" height="24" width="12" class="icon"><path d="M 165.5,0.2 V 45 H 25 c -13.8,0 -25,11.2 -25,25 V 387 c 0,13.8 11.2,25 25,25 h 150.5 c 13.8,0 25,-11.2 25,-25 V 0.2 h -35 z M 65.2,366.5 H 34.2 v -24.5 h 31 v 24.5 z m 0,-44.3 H 34.2 v -24.5 h 31 v 24.5 z m 50.5,44.3 H 84.7 v -24.5 h 31 v 24.5 z m 0,-44.3 H 84.7 v -24.5 h 31 v 24.5 z m 50.5,44.3 h -31 v -24.5 h 31 v 24.5 z m 0,-44.3 h -31 v -24.5 h 31 v 24.5 z m 0,-59.3 h -132 V 95.4 h 132 V 262.9 z"></path></svg></button><button title="Auto (100%)" data-width="auto" class="auto is-active">Auto</button></div></div><script>(function(){var searchIndex=[{"title":"main","filename":"main","url":"main.html"},{"title":"","filename":"main","url":"main.html#"},{"title":"HTML5 display definitions","filename":"main","url":"main.html#html5-display-definitions"},{"title":"Links","filename":"main","url":"main.html#links"},{"title":"Text-level semantics","filename":"main","url":"main.html#textlevel-semantics"},{"title":"Embedded content","filename":"main","url":"main.html#embedded-content"},{"title":"Grouping content","filename":"main","url":"main.html#grouping-content"},{"title":"Forms","filename":"main","url":"main.html#forms"},{"title":"Tables","filename":"main","url":"main.html#tables"},{"title":"Typography","filename":"main","url":"main.html#typography"},{"title":"Elements","filename":"main","url":"main.html#elements"},{"title":"Home Page","filename":"main","url":"main.html#home-page"},{"title":"Media Object","filename":"main","url":"main.html#media-object"},{"title":"Other Pages","filename":"main","url":"main.html#other-pages"},{"title":"Footer","filename":"main","url":"main.html#footer"},{"title":"1200up","filename":"sass/breakpoints/1200up","url":"sass-breakpoints-1200up.html"},{"title":"","filename":"sass/breakpoints/1200up","url":"sass-breakpoints-1200up.html#"},{"title":"768up","filename":"sass/breakpoints/768up","url":"sass-breakpoints-768up.html"},{"title":"","filename":"sass/breakpoints/768up","url":"sass-breakpoints-768up.html#"},{"title":"992up","filename":"sass/breakpoints/992up","url":"sass-breakpoints-992up.html"},{"title":"","filename":"sass/breakpoints/992up","url":"sass-breakpoints-992up.html#"},{"title":"Home Page","filename":"sass/breakpoints/992up","url":"sass-breakpoints-992up.html#home-page"},{"title":"Other Pages","filename":"sass/breakpoints/992up","url":"sass-breakpoints-992up.html#other-pages"},{"title":"base","filename":"sass/breakpoints/base","url":"sass-breakpoints-base.html"},{"title":"","filename":"sass/breakpoints/base","url":"sass-breakpoints-base.html#"},{"title":"Elements","filename":"sass/breakpoints/base","url":"sass-breakpoints-base.html#elements"},{"title":"Home Page","filename":"sass/breakpoints/base","url":"sass-breakpoints-base.html#home-page"},{"title":"Media Object","filename":"sass/breakpoints/base","url":"sass-breakpoints-base.html#media-object"},{"title":"Other Pages","filename":"sass/breakpoints/base","url":"sass-breakpoints-base.html#other-pages"},{"title":"Footer","filename":"sass/breakpoints/base","url":"sass-breakpoints-base.html#footer"},{"title":"main","filename":"sass/main","url":"sass-main.html"},{"title":"","filename":"sass/main","url":"sass-main.html#"},{"title":"normalize","filename":"sass/normalize","url":"sass-normalize.html"},{"title":"","filename":"sass/normalize","url":"sass-normalize.html#"},{"title":"HTML5 display definitions","filename":"sass/normalize","url":"sass-normalize.html#html5-display-definitions"},{"title":"Links","filename":"sass/normalize","url":"sass-normalize.html#links"},{"title":"Text-level semantics","filename":"sass/normalize","url":"sass-normalize.html#textlevel-semantics"},{"title":"Embedded content","filename":"sass/normalize","url":"sass-normalize.html#embedded-content"},{"title":"Grouping content","filename":"sass/normalize","url":"sass-normalize.html#grouping-content"},{"title":"Forms","filename":"sass/normalize","url":"sass-normalize.html#forms"},{"title":"Tables","filename":"sass/normalize","url":"sass-normalize.html#tables"},{"title":"mixins","filename":"sass/partials/mixins","url":"sass-partials-mixins.html"},{"title":"","filename":"sass/partials/mixins","url":"sass-partials-mixins.html#"},{"title":"typography","filename":"sass/partials/typography","url":"sass-partials-typography.html"},{"title":"Typography","filename":"sass/partials/typography","url":"sass-partials-typography.html#typography"},{"title":"variables","filename":"sass/partials/variables","url":"sass-partials-variables.html"},{"title":"","filename":"sass/partials/variables","url":"sass-partials-variables.html#"},{"title":"slicknav","filename":"slicknav","url":"slicknav.html"},{"title":"","filename":"slicknav","url":"slicknav.html#"}];// StyleDocco documentation user interface elements
 // ==================================================================
 // Dropdowns and search.
 

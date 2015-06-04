@@ -13,7 +13,7 @@ Basic styling of html tags.
 */
 
 body{
-	font-family: $light;
+	@include DeckLight;
 }
 
 
@@ -286,9 +286,7 @@ header {
 
 h1, .h1{
 	font-size: 30px;
-	font-family: $thin;
-	font-style: normal;
-  	font-weight: normal;
+	@include DeckThin;
   	letter-spacing: 1px;
   	
   	margin-top: 30;
@@ -301,8 +299,7 @@ h2, .h2{
 
 .h3{
       font-size: 30px;
-      font-family: $bolder;
-      font-weight: normal;
+      @include DeckBlack;
       margin: 0;
     }
 
@@ -332,21 +329,20 @@ h2, .h2{
 
 .hours-open {
 	text-transform: uppercase;
-	font-family: $bolder;
+	@include DeckBlack;
 	font-size: 10px;
 	letter-spacing: .6px;
 }
 
 .hours-times{
-	font-family: $light;
+	@include DeckLight;
 	font-size: 10px;
 	letter-spacing: .3px;
 }
 
 .days {
 	text-transform: uppercase;
-	font-family: $bold;
-	font-weight: bold;
+	@include DeckBold;
 }
 
 /* ##Navigation
@@ -360,7 +356,7 @@ h2, .h2{
 	display: none;
 }
 
-.login{
+.login-button{
 	display: none;
 }
 
@@ -403,7 +399,7 @@ nav.header-nav{
 
 
 				a{
-					font-family: $bolder;
+					@include DeckBlack;
 					color: #fff;
 					letter-spacing: 1.2px;
   					font-size: 16px;
@@ -413,7 +409,7 @@ nav.header-nav{
 
 			&.nav-h3{
 				a{
-					font-family: $light;
+					@include DeckLight;
 					color: #000;
 					font-size: 14px;
 					line-height: 20px;
@@ -488,7 +484,6 @@ nav.header-nav{
 }
 
 #home-search-menu{
-	padding-right: 0;
 	
 	ul{
 		list-style-type: none;
@@ -516,7 +511,7 @@ nav.header-nav{
 	color: $white;
 	text-transform: uppercase;
 	font-size: 10px;
-	font-family: $thin;
+	@include DeckThin;
 	letter-spacing: 1px;
 	opacity: .42;
 	text-align: center;
@@ -526,14 +521,17 @@ nav.header-nav{
 	&:hover{
 		opacity: 1;
 	}
-
-
 }
+
+#search-menu-0 .search-menu-item{ width: 17%;}
+#search-menu-1 .search-menu-item{ width:35%;}
+#search-menu-2 .search-menu-item{ width:13%;}
+#search-menu-3 .search-menu-item{ width:19%;}
+#search-menu-4 .search-menu-item{ width:16%;}
 
 .menu-active{
 	opacity: 1;
-	font-family: $bold;
-	font-weight: bold;
+	@include DeckBold;
 }
 
 .home-search-bar{
@@ -555,7 +553,7 @@ nav.header-nav{
 	border: 1px solid $black;
 	margin: 0;
 	padding: 0;
-	font-family: $bold;
+	@include DeckBold;
 	font-size: 14px;
 	float: left;
 	letter-spacing: 1px;
@@ -579,8 +577,7 @@ nav.header-nav{
 
 	h3{
 		font-size: 40px;
-		font-family: $thin;
-		font-weight: normal;
+		@include DeckThin;
 		margin-top: 0;
 		margin-bottom: 30px;
 		padding-top: 15px;
@@ -589,8 +586,7 @@ nav.header-nav{
 
 	h4 {
 		font-size: 16px;
-		font-family: $bolder;
-		font-weight: normal;
+		@include DeckBlack;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		margin-bottom: 0;
@@ -598,7 +594,7 @@ nav.header-nav{
 
 	p{
 		letter-spacing: .3px;
-		font-family: $thin;
+		@include DeckThin;
 		margin-top: 8px;
 		padding-right: 15px;
 
@@ -633,8 +629,7 @@ nav.header-nav{
 		padding-left: 20px;
 	  	padding-right: 15px;
 		font-size: 16px;
-	    font-family: $bolder;
-	    font-weight: normal;
+	    @include DeckBlack;
 	    text-transform: uppercase;
 	    letter-spacing: 1px;
 	    margin-bottom: 0;
@@ -646,7 +641,7 @@ nav.header-nav{
 		color: $white;
 		padding-left: 20px;
 		letter-spacing: .3px;
-		font-family: $thin;
+		@include DeckThin;
 		margin-top: 8px;
 		padding-right: 15px;
 
@@ -674,6 +669,37 @@ nav.header-nav{
 	.left, .right, .full{
 		width: 100%;
 	}
+}
+
+@media (min-width: 600px){
+
+	.exhibit-left, .exhibit-right{
+	  height: 320px;
+	  overflow: hidden;
+	}
+
+	.exhibit-left{
+
+	  .exhibit-text {
+	    width: 42.86%;
+	    float: left;
+	  }
+
+	  .exhibit-img{
+	    width: 57.14%;
+	    float: left;
+	    overflow: hidden;
+
+	    img{
+	      height: 100%;
+	      width: auto;
+	      position: absolute;
+	      right: 15px;
+	    }
+
+	  }
+	}
+
 }
 
 
@@ -735,15 +761,14 @@ section.row{
 
     h1, .h1{
       font-size: 30px;
-      font-family: $bolder;
+      @include DeckBlack;
       margin: 0;
     }
 
     h2{
       font-size: 18px;
       line-height: 30px;
-      font-family: $light;
-      font-weight: normal;
+      @include DeckLight;
       margin: 0;
     }
 
@@ -756,8 +781,7 @@ section.row{
 
       th{
       	width: 50%;
-      	font-family: $bolder;
-      	font-weight: normal;
+      	@include DeckBlack;
       	padding-left: 10px;
       }
       td{
@@ -796,8 +820,7 @@ section.row{
 	        background-image: url("../img/minus.png");
 	        background-repeat: no-repeat;
 	        background-position: 6px 0;
-			font-family: $bold;
-			font-weight: bold;
+			@include DeckBold;
 			color: $mica-green-lite;
 			height: 30px;
 			padding-left: 35px;
@@ -871,11 +894,10 @@ section.row{
 	}
 
 	.account-sect{
-		background-color: $mica-green-lite;
+		background-color: $black;
 		color: $white;
-		font-family: $bolder;
-		font-weight: normal;
-		font-size: 16px;
+		@include DeckBlack;
+		font-size: 14px;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		padding: 5px;
@@ -1025,8 +1047,7 @@ section.row{
 
 	h2{
 		font-size: 30px;
-      	font-family: $bolder;
-      	font-weight: normal;
+      	@include DeckBlack;
 		width: 100%;
 		padding-bottom: 4px;
 		border-bottom: 1px solid $mica-green-lite;
@@ -1035,8 +1056,7 @@ section.row{
 
 	h3{
 		text-transform: uppercase;
-		font-family: $bolder;
-      	font-weight: normal;
+		@include DeckBlack;
       	font-size: 14px;
       	margin-bottom:0;
       	margin-top:20px;
@@ -1153,7 +1173,6 @@ tbody.collapse.in {
   display: block;
   padding: 3px 20px;
   clear: both;
-  font-weight: normal;
   line-height: 1.42857143;
   color: #333333;
   white-space: nowrap;
