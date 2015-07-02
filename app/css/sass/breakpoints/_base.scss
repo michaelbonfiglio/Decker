@@ -287,8 +287,6 @@ header {
 h1, .h1{
 	font-size: 30px;
 	@include DeckThin;
-  	letter-spacing: 1px;
-  	
   	margin-top: 30;
   	margin-bottom: 30;
 }

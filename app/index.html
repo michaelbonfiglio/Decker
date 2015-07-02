@@ -357,16 +357,30 @@
 				var $item = $(this);
 
 				var $marg = index*80 + "px";
+
+				
 				
 				$item.click(function () {
 				event.preventDefault();
-				  $( "#home-search-menu a" ).removeClass( "menu-active" );
-				  $(this).addClass("menu-active");
-				  $( "#sbar" ).animate({
-				    marginTop: $marg,
+				var $windSize = $( window ).width();
+				$( "#home-search-menu a" ).removeClass( "menu-active" );
+				$(this).addClass("menu-active");
+				if($windSize>992){
+					
+					$( "#sbar" ).animate({
+				    	marginTop: $marg,
 				 	}, 800 );
+				}
+				  
 				  
 				});		
+			});
+
+			$( window ).resize(function() {
+				var $windSize2 = $( window ).width();
+				if($windSize2<992){
+			  		$( "#sbar" ).removeAttr( "style" );
+				}
 			});
 
 			

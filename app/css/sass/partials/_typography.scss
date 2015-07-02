@@ -12,101 +12,125 @@ $bold: 'Griffith Gothic', 'Roboto', sans-serif;
 $bolder: 'Griffith Gothic Black', 'Roboto', sans-serif;
 
 @mixin DeckThin {
-  font-family: 'Griffith Gothic Thin', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+  font-family: /*'Griffith Gothic Thin',*/ 'Fira Sans', 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 @mixin DeckLight {
-  font-family: 'Griffith Gothic Light', 'Bell Gothic W01 Light', 'Roboto', sans-serif;
+  font-family: /*'Griffith Gothic Light',*/ 'Fira Sans', 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
 }
 
 @mixin DeckBold {
-  font-family: 'Griffith Gothic', 'Bell Gothic W01 Bold_691903', 'Roboto', sans-serif;
+  font-family: /*'Griffith Gothic',*/ 'Fira Sans', 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
 }
 
 @mixin DeckBlack {
-  font-family: 'Griffith Gothic Black', 'Bell Gothic W01 Black_691900', 'Roboto', sans-serif;
+  font-family: /*'Griffith Gothic Black',*/ 'Fira Sans', 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/eot/FiraSans-Hair.eot');
+    src: url('../fonts/eot/FiraSans-Hair.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/FiraSans-Hair.woff') format('woff'),
+         url('../fonts/ttf/FiraSans-Hair.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/eot/FiraSans-UltraLight.eot');
+    src: url('../fonts/eot/FiraSans-UltraLight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/FiraSans-UltraLight.woff') format('woff'),
+         url('../fonts/ttf/FiraSans-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/eot/FiraSans-Light.eot');
+    src: url('../fonts/eot/FiraSans-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/FiraSans-Light.woff') format('woff'),
+         url('../fonts/ttf/FiraSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/eot/FiraSans-Regular.eot');
+    src: url('../fonts/eot/FiraSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/FiraSans-Regular.woff') format('woff'),
+         url('../fonts/ttf/FiraSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/eot/FiraSans-Medium.eot');
+    src: url('../fonts/eot/FiraSans-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/FiraSans-Medium.woff') format('woff'),
+         url('../fonts/ttf/FiraSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/eot/FiraSans-SemiBold.eot');
+    src: url('../fonts/eot/FiraSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/FiraSans-SemiBold.woff') format('woff'),
+         url('../fonts/ttf/FiraSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
 }
 
 
 
-.griffithgothicblack {
-  font-family: "Griffith Gothic Black";
-  font-style: normal;
-  font-weight: normal;
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/eot/FiraSans-Bold.eot');
+    src: url('../fonts/eot/FiraSans-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/FiraSans-Bold.woff') format('woff'),
+         url('../fonts/ttf/FiraSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
-.griffithgothicblackitalic {
-  font-family: "Griffith Gothic Black";
-  font-style: italic;
-  font-weight: normal;
+
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/eot/FiraSans-ExtraBold.eot');
+    src: url('../fonts/eot/FiraSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/FiraSans-ExtraBold.woff') format('woff'),
+         url('../fonts/ttf/FiraSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
 }
 
-.griffithgothicbold {
-  font-family: "Griffith Gothic";
-  font-style: normal;
-  font-weight: bold;
+
+
+@font-face{
+    font-family: 'Fira Sans';
+    src: url('../fonts/eot/FiraSans-Heavy.eot');
+    src: url('../fonts/eot/FiraSans-Heavy.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/woff/FiraSans-Heavy.woff') format('woff'),
+         url('../fonts/ttf/FiraSans-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
 }
 
-.griffithgothicbolditalic {
-  font-family: "Griffith Gothic";
-  font-style: italic;
-  font-weight: bold;
-}
-
-.griffithgothiclight {
-  font-family: "Griffith Gothic Light";
-  font-style: normal;
-  font-weight: normal;
-}
-
-.griffithgothiclightitalic {
-  font-family: "Griffith Gothic Light";
-  font-style: italic;
-  font-weight: normal;
-}
-
-.griffithgothicregular {
-  font-family: "Griffith Gothic";
-  font-style: normal;
-  font-weight: normal;
-}
-
-.griffithgothicregularitalic {
-  font-family: "Griffith Gothic";
-  font-style: italic;
-  font-weight: normal;
-}
-
-.griffithgothicthin {
-  font-family: "Griffith Gothic Thin";
-  font-style: normal;
-  font-weight: normal;
-}
-
-.griffithgothicthinitalic {
-  font-family: "Griffith Gothic Thin";
-  font-style: italic;
-  font-weight: normal;
-}
-
-.griffithgothicultra {
-  font-family: "Griffith Gothic Ultra";
-  font-style: normal;
-  font-weight: normal;
-}
-
-.griffithgothicultraitalic {
-  font-family: "Griffith Gothic Ultra";
-  font-style: italic;
-  font-weight: normal;
-}
 
 
